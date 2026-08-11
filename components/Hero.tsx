@@ -59,7 +59,7 @@ export default function Hero() {
             .to(loader, { opacity: 0, duration: .22, ease: "power2.out" }, 1.25)
             .to(keyring, {
               x: () => window.innerWidth * .28,
-              opacity: .62,
+              opacity: .82,
               filter: "brightness(.2)",
               duration: .9,
               ease: "power3.inOut"
