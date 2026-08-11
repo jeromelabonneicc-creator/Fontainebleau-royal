@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 import { ArrowRight } from "lucide-react";
+import KeyRing from "./KeyRing";
 
 export default function Hero() {
   const ref = useRef<HTMLElement>(null);
@@ -80,6 +81,7 @@ export default function Hero() {
 
   return (
     <section id="accueil" className="hero section" ref={ref}>
+      <KeyRing />
       <div className="hero-glow" />
       <div className="container hero-grid">
         <div className="hero-copy-wrap">
