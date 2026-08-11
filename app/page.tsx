@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Story from "@/components/Story";
-import Pillars from "@/components/Pillars";
+import VideoSection from "@/components/VideoSection";
 import Project from "@/components/Project";
 import Gallery from "@/components/Gallery";
 import Donation from "@/components/Donation";
@@ -19,7 +19,7 @@ export default function Home() {
       <KeyRing />
       <Hero />
       <Story />
-      <Pillars />
+      <VideoSection />
       <Project />
       <Gallery />
       <Donation />
