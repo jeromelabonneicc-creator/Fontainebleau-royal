@@ -8,7 +8,6 @@ import Donation from "@/components/Donation";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
-import KeyRing from "@/components/KeyRing";
 import CinematicMotion from "@/components/CinematicMotion";
 
 export default function Home() {
@@ -16,7 +15,6 @@ export default function Home() {
     <main>
       <CinematicMotion />
       <Header />
-      <KeyRing />
       <Hero />
       <Story />
       <VideoSection />
