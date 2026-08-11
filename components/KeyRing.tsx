@@ -35,7 +35,7 @@ export default function KeyRing() {
           });
         });
 
-        if (matchMedia("(pointer:fine)").matches) {
+        if (matchMedia("(pointer:fine) and (min-width: 721px)").matches) {
           const xTo = gsap.quickTo(wrap.current!, "x", { duration: 1.1, ease: "power3.out" });
           const yTo = gsap.quickTo(wrap.current!, "y", { duration: 1.35, ease: "power3.out" });
           const onMove = (event: PointerEvent) => {
@@ -73,6 +73,11 @@ export default function KeyRing() {
       <div className="pendant pendant-3">
         <img className="real-chain" src="/images/keyring/chain-small.png" alt="" />
         <img className="real-frame" src="/images/keyring/frame-small.png" alt="" />
+      </div>
+
+      <div className="mobile-key-loader">
+        <div className="mobile-key-loader-track"><span /></div>
+        <strong className="mobile-key-loader-value">0%</strong>
       </div>
     </div>
   );
