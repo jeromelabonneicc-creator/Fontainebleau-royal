@@ -1,9 +1,4 @@
-const blocks = [
-  ["01", "Un nouveau lieu", "Une salle pensée pour accueillir les cultes, les familles et les différents ministères."],
-  ["02", "Plus de capacité", "Permettre à davantage de personnes d’être accueillies dans de bonnes conditions."],
-  ["03", "Un lieu adapté", "Des espaces dédiés au culte, aux enfants, aux formations et aux événements."],
-  ["04", "Un projet financé ensemble", "Chaque contribution nous rapproche de l’ouverture de cette nouvelle demeure."]
-];
+import { missionAxes } from "@/content/campaign";
 
 export default function Project() {
   return (
@@ -11,18 +6,28 @@ export default function Project() {
       <div className="container">
         <div className="project-heading">
           <div>
-            <p className="eyebrow">Le projet</p>
-            <h2>Pourquoi <span className="gold-text">ce lieu ?</span></h2>
+            <p className="eyebrow">Pourquoi ce projet ?</p>
+            <h2>Un lieu fixe au service de <span className="gold-text">la mission.</span></h2>
           </div>
           <p>
-            Le site transforme l’émotion de la campagne en informations claires :
-            ce qui est financé, pourquoi, et ce que cela rend possible.
+            Fontainebleau Royal, c’est le projet de doter ICC Fontainebleau d’un lieu fixe,
+            entièrement dédié à la mission que Dieu nous a confiée.
           </p>
         </div>
-        <div className="project-grid">
-          {blocks.map(([n, title, copy]) => (
-            <article className="project-card" key={n}>
-              <span>{n}</span>
+
+        <div className="project-statement">
+          <p>Ce lieu n’est pas une fin en soi.</p>
+          <strong>Il sera un outil pour accueillir, servir, former, transformer et déployer la vision.</strong>
+        </div>
+
+        <div className="mission-heading">
+          <p className="eyebrow">Ce que Fontainebleau Royal permettra</p>
+          <h2>Un bâtiment pour <span className="gold-text">agir concrètement.</span></h2>
+        </div>
+        <div className="project-grid mission-grid">
+          {missionAxes.map(({ number, title, copy }) => (
+            <article className="project-card" key={title}>
+              <span>{number}</span>
               <h3>{title}</h3>
               <p>{copy}</p>
             </article>
