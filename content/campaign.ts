@@ -5,17 +5,6 @@ export const missionAxes = [
   { number: "04", title: "Impacter", copy: "Faire de ce lieu une base permettant à ICC Fontainebleau d’être davantage une solution pour son territoire et, au-delà, pour les nations." }
 ];
 
-export const learningTopics = [
-  "Pourquoi Fontainebleau Royal ?",
-  "Pourquoi ICC Fontainebleau a-t-elle besoin d’un lieu fixe ?",
-  "À quoi servira concrètement le futur bâtiment ?",
-  "Pourquoi devenir contributeur ?",
-  "Pourquoi privilégier aussi une contribution mensuelle ?",
-  "Comment les contributions permettent-elles de faire avancer le projet ?",
-  "Quelles sont les différentes étapes avant d’obtenir notre lieu ?",
-  "Où en est Fontainebleau Royal aujourd’hui ?"
-];
-
 export const campaignSteps = [
   { label: "Aujourd’hui", title: "Campagne de contribution lancée.", status: "current" },
   { label: "Prochaine étape", title: "Réunir les ressources nécessaires à la location du futur bâtiment.", status: "next" }

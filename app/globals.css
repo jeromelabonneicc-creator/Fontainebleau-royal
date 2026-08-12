@@ -174,6 +174,7 @@ linear-gradient(180deg,#03162f,#020d1d)}
 .contribution-options>small{grid-column:1/-1;text-align:center;color:var(--muted)}
 .faq-section{background:#020d1d}
 .faq-grid{display:grid;grid-template-columns:.75fr 1fr;gap:70px}
+.faq-intro{max-width:520px;color:var(--muted);font-size:17px;line-height:1.65}
 .faq-list details{border-top:1px solid var(--line)}
 .faq-list details:last-child{border-bottom:1px solid var(--line)}
 .faq-list summary{list-style:none;cursor:pointer;padding:26px 0;display:flex;justify-content:space-between;font-size:19px;font-weight:700}
