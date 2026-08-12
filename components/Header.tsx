@@ -4,11 +4,11 @@ import { Menu, X } from "lucide-react";
 
 const links = [
   ["Accueil", "#accueil"],
-  ["Histoire", "#histoire"],
   ["Le projet", "#projet"],
-  ["Galerie", "#galerie"],
+  ["Histoire", "#histoire"],
+  ["Comprendre", "#comprendre"],
+  ["Avancement", "#avancement"],
   ["Contribuer", "#contribuer"],
-  ["FAQ", "#faq"]
 ];
 
 export default function Header() {
@@ -33,7 +33,7 @@ export default function Header() {
         {links.map(([label, href]) => <a key={href} href={href}>{label}</a>)}
       </nav>
 
-      <a className="btn btn-outline desktop-donate" href="https://dons2.egliseicc.com/" target="_blank" rel="noreferrer">Faire un don</a>
+      <a className="btn btn-outline desktop-donate" href="https://dons2.egliseicc.com/" target="_blank" rel="noreferrer">Devenir contributeur</a>
 
       <button className="menu-btn" onClick={() => setOpen(!open)} aria-label="Menu" aria-expanded={open} aria-controls="mobile-navigation">
         {open ? <X /> : <Menu />}
@@ -44,7 +44,7 @@ export default function Header() {
           {links.map(([label, href]) => (
             <a key={href} href={href} onClick={() => setOpen(false)}>{label}</a>
           ))}
-          <a className="btn btn-gold" href="https://dons2.egliseicc.com/" target="_blank" rel="noreferrer" onClick={() => setOpen(false)}>Faire un don</a>
+          <a className="btn btn-gold" href="https://dons2.egliseicc.com/" target="_blank" rel="noreferrer" onClick={() => setOpen(false)}>Devenir contributeur</a>
         </nav>
       )}
     </header>
