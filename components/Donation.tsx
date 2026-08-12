@@ -4,19 +4,19 @@ export default function Donation() {
       <div className="container donation-grid">
         <div>
           <p className="eyebrow">Contribuer</p>
-          <h2>Mensuellement ou par <span className="gold-text">un don libre.</span></h2>
+          <h2>Prendre part, dans la durée ou <span className="gold-text">librement.</span></h2>
           <p className="donation-copy">
-            L’engagement mensuel nous permet de construire le projet dans la durée et d’avoir
-            une meilleure visibilité sur les ressources disponibles pour notre futur lieu.
+            Les contributions permettent de couvrir la location, les travaux d’aménagement,
+            les finitions, l’équipement et l’installation du futur lieu.
           </p>
-          <p className="donation-copy">Chacun reste libre du montant de sa contribution.</p>
+          <p className="donation-copy">Chacun reste libre du montant et du rythme de sa contribution.</p>
         </div>
 
         <div className="contribution-options">
           <article className="contribution-option featured">
             <span>Dans la durée</span>
             <h3>Contribution mensuelle</h3>
-            <p>Un engagement régulier qui permet de construire le projet avec davantage de visibilité.</p>
+            <p>Un engagement régulier qui soutient la mobilisation jusqu’à l’installation dans le futur lieu.</p>
             <a className="btn btn-gold btn-full" href="https://dons2.egliseicc.com/" target="_blank" rel="noreferrer">Contribuer mensuellement →</a>
           </article>
           <article className="contribution-option">

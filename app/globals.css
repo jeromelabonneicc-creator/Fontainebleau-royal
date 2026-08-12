@@ -247,3 +247,128 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   .hero-kicker,.hero-title,.hero-copy,.hero-actions,.hero-mini-pills{opacity:1;transform:none}
 }
+
+/* Refonte éditoriale Fontainebleau Royal */
+.hero-title-royal{font-size:clamp(54px,5.2vw,86px);line-height:.86;margin:36px 0 30px;letter-spacing:-.065em}
+.hero-title-royal span:first-child{letter-spacing:-.075em}
+.hero-copy-wrap{min-width:0}
+.hero-scripture{max-width:610px;margin:25px 0 0;padding:5px 0 5px 20px;border-left:2px solid rgba(243,181,26,.72)}
+.hero-scripture p{margin:0;color:#cdd5e1;font-size:15px;line-height:1.6;font-style:italic}
+.hero-scripture cite{display:block;margin-top:8px;color:var(--gold);font-size:11px;font-style:normal;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.hero-actions{margin-top:28px}
+.video-section{padding:72px 0 118px;background:linear-gradient(180deg,#020d1d,#05152b)}
+.video-section::before{background:linear-gradient(90deg,transparent,rgba(243,181,26,.28),transparent)}
+
+.scripture-panel{position:relative;margin:58px 0 0;padding:32px 38px;border:1px solid rgba(243,181,26,.45);border-left:4px solid var(--gold);border-radius:18px;background:linear-gradient(135deg,rgba(243,181,26,.08),rgba(255,255,255,.025));overflow:hidden}
+.scripture-panel::after{content:"✦";position:absolute;right:25px;top:12px;color:rgba(243,181,26,.15);font-size:82px}
+.scripture-panel p{position:relative;z-index:1;margin:0;max-width:950px;font-size:clamp(23px,2.3vw,35px);line-height:1.35;font-weight:700}
+.scripture-panel cite{position:relative;z-index:1;display:block;margin-top:15px;color:var(--gold);font-size:12px;font-style:normal;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+.pillar-heading{margin-top:110px;max-width:1000px}
+.royal-pillars{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:48px}
+.royal-pillars article{position:relative;min-height:280px;padding:36px;border:1px solid rgba(243,181,26,.26);border-radius:20px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.014));overflow:hidden}
+.royal-pillars article::after{content:"";position:absolute;width:220px;height:220px;right:-100px;bottom:-120px;border:1px solid rgba(243,181,26,.17);border-radius:50%}
+.royal-pillars article>span{position:absolute;right:30px;top:28px;color:rgba(243,181,26,.45);font-size:12px;font-weight:800;letter-spacing:.16em}
+.royal-pillars h3{margin:38px 0 12px;font-size:34px}
+.royal-pillars p{max-width:510px;margin:0;color:#bac4d2;font-size:17px;line-height:1.65}
+.gold-icon{width:58px;height:58px;display:grid;place-items:center;border:1px solid rgba(243,181,26,.5);border-radius:50%;color:var(--gold);background:rgba(243,181,26,.08);box-shadow:inset 0 0 24px rgba(243,181,26,.05)}
+.gold-icon svg{width:27px;height:27px;stroke-width:1.7}
+.mission-heading{margin-top:112px}
+.project-card{min-height:300px;padding:38px}
+.project-card h3{margin:34px 0 14px;font-size:29px}
+.project-card p{max-width:530px;margin-bottom:0;font-size:16px}
+
+.solidarity-block{margin-top:112px;padding:52px;border-radius:28px;color:#07172c;background:linear-gradient(145deg,#fbf8ef,#eae3d3);box-shadow:0 34px 90px rgba(0,0,0,.28)}
+.solidarity-heading{display:grid;grid-template-columns:1fr .65fr;gap:55px;align-items:end}
+.solidarity-heading .eyebrow{color:#a66d00}
+.solidarity-heading h2{margin-bottom:0;color:#07172c;font-size:clamp(42px,5vw,70px)}
+.solidarity-heading>p{margin:0;color:#384458;font-size:17px;line-height:1.65}
+.solidarity-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:42px}
+.solidarity-card{min-width:0;min-height:225px;padding:24px 20px;border:1px solid rgba(180,126,7,.3);border-radius:17px;background:rgba(255,255,255,.56);box-shadow:0 10px 28px rgba(5,20,42,.06)}
+.solidarity-card .gold-icon{border-color:rgba(173,112,0,.45);color:#b77600;background:#fff8df}
+.solidarity-card h3{margin:30px 0 8px;color:#07172c;font-size:18px;line-height:1.25}
+.solidarity-card p{margin:0;color:#566073;font-size:13px;line-height:1.5}
+
+.story-grid{align-items:center}
+.story-scripture{margin:0}
+.story-scripture p{font-size:clamp(21px,2vw,29px)}
+.prophecy-intro{display:grid;grid-template-columns:1fr .55fr;gap:70px;align-items:end;margin-top:72px;padding-top:35px;border-top:1px solid var(--line)}
+.prophecy-intro p{max-width:720px;margin:0;color:#d4dbe5;font-size:20px;line-height:1.65}
+.prophecy-intro span{color:var(--muted);font-size:14px;line-height:1.6}
+.prophecy-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px}
+.prophecy-card{min-height:230px;padding:28px;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.025)}
+.prophecy-card svg{width:32px;height:32px;color:var(--gold);stroke-width:1.5}
+.prophecy-card p{margin:auto 0 7px;color:var(--gold);font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.prophecy-card h3{margin:0;font-size:19px}
+.challenge-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:110px}
+.challenge-card{padding:42px;border:1px solid rgba(243,181,26,.25);border-radius:22px;background:#071a34}
+.challenge-card .eyebrow{margin-top:30px}
+.challenge-card h3{margin:14px 0 16px;font-size:clamp(28px,3vw,42px);line-height:1.1}
+.challenge-card>p:not(.eyebrow){color:#bdc7d5;font-size:17px;line-height:1.6}
+.challenge-card ul{display:grid;gap:12px;margin:30px 0 0;padding:0;list-style:none}
+.challenge-card li{display:flex;align-items:center;gap:12px;padding-top:12px;border-top:1px solid var(--line);color:#e3e7ed}
+.challenge-card li svg{width:18px;height:18px;flex:0 0 auto;color:var(--gold)}
+.spiritual-card{background:linear-gradient(145deg,#0b2548,#06172f)}
+.spiritual-card strong{display:block;margin-top:34px;padding-top:20px;border-top:1px solid rgba(243,181,26,.32);color:var(--gold-2);font-size:18px;line-height:1.5}
+.prayer-block{display:grid;grid-template-columns:.7fr 1fr;gap:65px;margin-top:20px;padding:50px;border:1px solid rgba(243,181,26,.3);border-radius:22px;background:linear-gradient(145deg,rgba(243,181,26,.07),rgba(255,255,255,.02))}
+.prayer-heading blockquote{margin:34px 0 0}
+.prayer-heading blockquote p{margin:0;font-size:24px;line-height:1.45;font-weight:700}
+.prayer-heading cite{display:block;margin-top:15px;color:var(--gold);font-size:12px;font-style:normal;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.prayer-points{display:grid;grid-template-columns:repeat(2,1fr);gap:0 26px}
+.prayer-points>div{display:flex;gap:12px;align-items:flex-start;padding:17px 0;border-bottom:1px solid var(--line)}
+.prayer-points span{color:var(--gold)}
+.prayer-points p{margin:0;color:#d4dbe5;font-size:15px;line-height:1.5}
+
+@media(max-width:1050px){
+  .hero-title-royal{font-size:clamp(60px,9vw,92px);max-width:850px}
+  .solidarity-heading,.prophecy-intro,.prayer-block{grid-template-columns:1fr;gap:28px}
+  .solidarity-grid{grid-template-columns:repeat(3,1fr)}
+  .prophecy-grid{grid-template-columns:repeat(2,1fr)}
+  .prayer-points{grid-template-columns:repeat(2,1fr)}
+}
+
+@media(max-width:720px){
+  h2{font-size:clamp(38px,11vw,54px)}
+  .hero{min-height:100svh;padding-top:112px;padding-bottom:72px}
+  .hero-title-royal{font-size:clamp(37px,11.8vw,58px);line-height:.9;margin:30px 0 25px}
+  .hero-title-royal span:first-child{letter-spacing:-.07em}
+  .hero-copy{font-size:17px;line-height:1.5}
+  .hero-scripture{opacity:0;transform:translateY(34px);margin-top:21px;padding-left:15px}
+  .hero-scripture p{font-size:13px;line-height:1.55}
+  .hero-actions{margin-top:24px}
+  .video-section{padding:42px 0 78px}
+  .video-shell{width:min(calc(100% - 20px),var(--max))}
+  .video-frame{padding:5px;border-radius:17px}
+  .video-frame::after{inset:5px;border-radius:11px}
+  .video-frame video{border-radius:11px}
+  .scripture-panel{margin-top:35px;padding:25px 22px}
+  .scripture-panel p{font-size:21px}
+  .scripture-panel::after{right:10px;font-size:58px}
+  .pillar-heading,.mission-heading{margin-top:74px}
+  .royal-pillars,.mission-grid,.challenge-grid{display:flex;gap:12px;overflow-x:auto;padding:2px 2px 16px;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-inline:contain}
+  .royal-pillars::-webkit-scrollbar,.mission-grid::-webkit-scrollbar,.challenge-grid::-webkit-scrollbar{display:none}
+  .royal-pillars{margin-top:34px}
+  .royal-pillars article{min-width:79vw;min-height:245px;padding:28px;scroll-snap-align:center}
+  .royal-pillars h3{margin-top:30px}
+  .mission-grid{margin-top:38px;border:0}
+  .project-card{min-width:80vw;min-height:250px;padding:30px;border:1px solid var(--line);scroll-snap-align:center}
+  .solidarity-block{margin-top:76px;padding:32px 22px;border-radius:22px}
+  .solidarity-heading h2{font-size:44px}
+  .solidarity-grid{display:flex;gap:12px;overflow-x:auto;margin-top:30px;padding:2px 2px 15px;scroll-snap-type:x mandatory;scrollbar-width:none}
+  .solidarity-grid::-webkit-scrollbar,.prophecy-grid::-webkit-scrollbar{display:none}
+  .solidarity-card{min-width:74vw;min-height:215px;scroll-snap-align:center}
+  .story-grid{gap:30px}
+  .story-scripture{margin:0}
+  .prophecy-intro{margin-top:50px;padding-top:28px}
+  .prophecy-intro p{font-size:17px}
+  .prophecy-grid{display:flex;gap:12px;overflow-x:auto;margin-top:28px;padding:2px 2px 15px;scroll-snap-type:x mandatory;scrollbar-width:none}
+  .prophecy-card{min-width:72vw;min-height:205px;scroll-snap-align:center}
+  .challenge-grid{margin-top:72px}
+  .challenge-card{min-width:84vw;padding:30px 25px;scroll-snap-align:center}
+  .prayer-block{margin-top:18px;padding:32px 24px}
+  .prayer-points{grid-template-columns:1fr}
+  .prayer-heading blockquote p{font-size:21px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .hero-scripture{opacity:1;transform:none}
+}

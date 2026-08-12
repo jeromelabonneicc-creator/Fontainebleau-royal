@@ -9,17 +9,17 @@ const publicUrl = process.env.NEXT_PUBLIC_SITE_URL
 export const metadata: Metadata = {
   metadataBase: new URL(publicUrl),
   title: "Fontainebleau Royal — ICC Fontainebleau",
-  description: "Participe au financement de la future salle d'ICC Fontainebleau.",
+  description: "Ensemble, participons aux travaux d’aménagement et de finition de la future salle d’ICC Fontainebleau.",
   openGraph: {
     title: "Fontainebleau Royal — ICC Fontainebleau",
-    description: "Participe au financement de la future salle d'ICC Fontainebleau.",
+    description: "Ensemble, participons aux travaux d’aménagement et de finition de la future salle d’ICC Fontainebleau.",
     type: "website",
     locale: "fr_FR"
   },
   twitter: {
     card: "summary_large_image",
     title: "Fontainebleau Royal — ICC Fontainebleau",
-    description: "Participe au financement de la future salle d'ICC Fontainebleau."
+    description: "Ensemble, participons aux travaux d’aménagement et de finition de la future salle d’ICC Fontainebleau."
   }
 };
 

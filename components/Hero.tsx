@@ -19,7 +19,7 @@ export default function Hero() {
         const mm = gsap.matchMedia();
 
         mm.add("(min-width: 721px)", () => {
-          gsap.from(".hero-kicker, .hero-title, .hero-copy, .hero-actions, .hero-mini-pills", {
+          gsap.from(".hero-kicker, .hero-title, .hero-copy, .hero-scripture, .hero-actions", {
             y: 30,
             opacity: 0,
             stagger: 0.09,
@@ -29,7 +29,7 @@ export default function Hero() {
         });
 
         mm.add("(max-width: 720px)", () => {
-          const content = gsap.utils.toArray<HTMLElement>(".hero-kicker, .hero-title, .hero-copy, .hero-actions, .hero-mini-pills");
+          const content = gsap.utils.toArray<HTMLElement>(".hero-kicker, .hero-title, .hero-copy, .hero-scripture, .hero-actions");
           const keyring = document.querySelector<HTMLElement>(".keyring-fixed");
           const loader = document.querySelector<HTMLElement>(".mobile-key-loader");
           const loaderFill = document.querySelector<HTMLElement>(".mobile-key-loader-track span");
@@ -88,30 +88,29 @@ export default function Hero() {
           <div className="hero-kicker">
             <span />
             <b>♛</b>
-            <strong>Fontainebleau Royal</strong>
+            <strong>Appel aux dons</strong>
             <span />
           </div>
 
-          <h1 className="hero-title">
-            <span>APPEL</span>
-            <span className="hero-small">AUX</span>
-            <span className="gold-text">DONS</span>
+          <h1 className="hero-title hero-title-royal">
+            <span>FONTAINEBLEAU</span>
+            <span className="gold-text">ROYAL</span>
           </h1>
 
           <p className="hero-copy">
-            Ensemble, participons au financement de la future salle d’ICC Fontainebleau.
+            Ensemble, participons aux travaux d’aménagement et de finition de la future salle d’ICC Fontainebleau.
           </p>
+
+          <blockquote className="hero-scripture">
+            <p>« J’ai donné une demeure à mon peuple […] et je l’ai planté pour qu’il y soit fixé et ne soit plus agité. »</p>
+            <cite>2 Samuel 7:10</cite>
+          </blockquote>
 
           <div className="hero-actions">
             <a className="btn btn-gold" href="https://dons2.egliseicc.com/" target="_blank" rel="noreferrer">Contribuer au projet <ArrowRight size={18}/></a>
             <a className="btn btn-outline" href="#projet">Découvrir le projet <ArrowRight size={18}/></a>
           </div>
 
-          <div className="hero-mini-pills">
-            <div><span>✝</span><b>Un projet<br/>spirituel</b></div>
-            <div><span>◎</span><b>Un impact<br/>communautaire</b></div>
-            <div><span>⌂</span><b>Une demeure<br/>pérenne</b></div>
-          </div>
         </div>
 
         <div className="keyring-space" aria-hidden="true" />
