@@ -6,7 +6,7 @@ export default function Donation() {
       <div className="container donation-grid">
         <div>
           <p className="eyebrow">Contribuer</p>
-          <h2>Prendre part, dans la durée ou <span className="gold-text">librement.</span></h2>
+          <h2>Je <span className="gold-text">participe.</span></h2>
           <p className="donation-copy">
             Les contributions permettent de couvrir la location, les travaux d’aménagement,
             les finitions, l’équipement et l’installation du futur lieu.
