@@ -1,13 +1,10 @@
 const faq = [
-  ["Pourquoi Fontainebleau Royal ?", "Fontainebleau Royal est le projet de doter ICC Fontainebleau d’un lieu fixe, entièrement dédié à la mission que Dieu nous a confiée."],
-  ["Pourquoi ICC Fontainebleau a-t-elle besoin d’un lieu fixe ?", "Pour accueillir durablement, accompagner, former et faire de ce lieu une base d’impact pour le territoire et, au-delà, pour les nations."],
-  ["À quoi servira concrètement le futur bâtiment ?", "Il permettra d’accueillir les personnes, d’accompagner les familles, de proposer des formations, du discipulat, des rencontres et les différents programmes de l’église."],
-  ["Qu’est-ce qu’un contributeur ?", "Un contributeur est une personne qui choisit de prendre part concrètement à Fontainebleau Royal, par un engagement mensuel ou un don libre."],
-  ["Pourquoi contribuer mensuellement ?", "L’engagement mensuel permet de construire le projet dans la durée et d’avoir une meilleure visibilité sur les ressources disponibles."],
-  ["Comment les contributions permettent-elles de faire avancer le projet ?", "Elles participent à préparer le futur lieu. Les usages détaillés seront communiqués lorsqu’ils auront été officiellement validés."],
-  ["Où en est Fontainebleau Royal aujourd’hui ?", "La campagne de contribution est lancée. La prochaine étape est de réunir les ressources nécessaires à la location du futur bâtiment."],
-  ["Puis-je choisir librement le montant ?", "Oui. Chacun reste libre de participer selon ce qu’il a à cœur de donner."],
-  ["Comment effectuer ma contribution ?", "Le bouton de contribution renvoie vers le parcours dédié. Il suffit ensuite de préciser « ICC Fontainebleau »."]
+  ["Pourquoi Fontainebleau Royal ?", "Pour louer et aménager un lieu stable, consacré à Dieu, capable d’accueillir durablement la famille ICC Fontainebleau et de servir le territoire."],
+  ["ICC Fontainebleau achète-t-elle une salle ?", "Non. Le projet concerne la location d’un futur lieu ainsi que les travaux d’aménagement, les finitions, l’équipement et l’installation nécessaires pour l’occuper."],
+  ["À quoi serviront les contributions ?", "Elles permettront de couvrir la location et les dépenses directement liées à l’aménagement et à l’installation du futur lieu."],
+  ["Quelles actions solidaires sont concernées ?", "Le SEF organise déjà un restaurant solidaire, des paniers alimentaires, des kits d’hygiène, un vestiaire solidaire et des permanences d’assistance sociale, administrative et professionnelle. Le futur lieu offrira un cadre stable pour poursuivre et développer ces actions."],
+  ["Qu’est-ce que le PCNC ?", "Le Parcours de Croissance de la Nouvelle Création accompagne le disciple : bienvenue dans le Royaume (001), fondements du Royaume (101), maturité spirituelle (201), Restauration Transformation Totale (RTT) et École des bergers (Poïmaino)."],
+  ["Comment contribuer ?", "Vous pouvez choisir une contribution mensuelle ou un don libre sur le parcours dédié, puis préciser « ICC Fontainebleau ». Le montant reste entièrement libre."]
 ];
 
 export default function FAQ() {
@@ -17,7 +14,7 @@ export default function FAQ() {
         <div>
           <p className="eyebrow">Comprendre Fontainebleau Royal</p>
           <h2>S’informer avant de<br/><span className="gold-text">contribuer.</span></h2>
-          <p className="faq-intro">Cette rubrique évoluera au fil de la campagne avec de nouvelles réponses et de nouveaux contenus.</p>
+          <p className="faq-intro">Les réponses essentielles sur le lieu, les contributions et les actions qui y seront accueillies.</p>
         </div>
         <div className="faq-list">
           {faq.map(([q, a]) => (

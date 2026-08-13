@@ -6,7 +6,7 @@ import { X, ZoomIn } from "lucide-react";
 const images = [
   ["/images/SALLE.png", "La salle"],
   ["/images/BATIMENT.png", "Le bâtiment"],
-  ["/images/WORSHIP.png", "Whorship"]
+  ["/images/WORSHIP.png", "Worship"]
 ];
 
 export default function Gallery() {

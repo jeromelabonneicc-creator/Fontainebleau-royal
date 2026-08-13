@@ -4,11 +4,11 @@ import { Menu, X } from "lucide-react";
 
 const links = [
   ["Accueil", "#accueil"],
-  ["Le projet", "#projet"],
+  ["La vision", "#projet"],
   ["Histoire", "#histoire"],
-  ["Comprendre", "#faq"],
-  ["Avancement", "#avancement"],
+  ["Galerie", "#galerie"],
   ["Contribuer", "#contribuer"],
+  ["Comprendre", "#faq"],
 ];
 
 export default function Header() {
@@ -25,7 +25,7 @@ export default function Header() {
   return (
     <header className={`header ${scrolled ? "header--scrolled" : ""}`}>
       <a className="brand" href="#accueil" aria-label="ICC Fontainebleau">
-        <div className="brand-mark"><img src="/images/Logo ICC Fontainebleau.png" alt="" /></div>
+        <div className="brand-mark"><img src="/images/logos/icc-fontainebleau.png" alt="" /></div>
         <span>Fontainebleau</span>
       </a>
 
