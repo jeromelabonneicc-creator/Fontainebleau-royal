@@ -1,3 +1,5 @@
+import { ShieldCheck } from "lucide-react";
+
 export default function Donation() {
   return (
     <section id="contribuer" className="section donation-section" data-reveal-section>
@@ -27,6 +29,19 @@ export default function Donation() {
           </article>
           <small>Précisez « ICC Fontainebleau » lors de votre contribution.</small>
         </div>
+
+        <aside className="donation-disclaimer">
+          <div className="gold-icon"><ShieldCheck /></div>
+          <div>
+            <strong>Donner librement et en conscience</strong>
+            <p>
+              « Ne vous endettez jamais pour donner à Dieu. Donnez selon votre niveau de foi et votre prospérité,
+              <br />{" "}
+              Lorsque vous donnez, faites-le en toute conscience et liberté, avec joie, sans contrainte, ni regret. »
+            </p>
+            <cite>2 Corinthiens 9:7</cite>
+          </div>
+        </aside>
       </div>
     </section>
   );

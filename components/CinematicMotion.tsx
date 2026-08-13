@@ -15,6 +15,8 @@ export default function CinematicMotion() {
       ctx = gsap.context(() => {
         gsap.utils.toArray<HTMLElement>("[data-reveal-section]").forEach((section) => {
           const targets = section.querySelectorAll(".eyebrow, h2, article, .scripture-panel, .solidarity-block, .prophecy-intro, .prayer-block, .gallery-card, .faq-list");
+          if (!targets.length) return;
+
           gsap.from(targets, {
             y: 42,
             opacity: 0,

@@ -11,8 +11,9 @@ export const missionActions = [
   },
   {
     icon: "graduation",
+    brand: "pcnc",
     title: "Former avec le PCNC",
-    copy: "Déployer le Parcours de Croissance de la Nouvelle Création : bienvenue dans le Royaume (001), fondements (101), maturité (201), restauration et transformation (RTT), puis formation des bergers (Poïmaino)."
+    copy: "Le Parcours de Croissance de la Nouvelle Création réunit cinq formations pour ancrer les principes et les valeurs du Royaume : Bienvenue dans le Royaume, Fondements du Royaume, Maturité spirituelle, Restauration et Transformation Totale, puis Poïmaino."
   },
   {
     icon: "megaphone",

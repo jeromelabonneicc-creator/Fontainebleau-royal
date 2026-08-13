@@ -90,11 +90,13 @@ export default function Project() {
           </p>
         </div>
         <div className="project-grid mission-grid">
-          {missionActions.map(({ icon, title, copy }) => {
+          {missionActions.map(({ icon, brand, title, copy }) => {
             const Icon = missionIcons[icon as keyof typeof missionIcons];
             return (
-              <article className="project-card" key={title}>
-                <div className="gold-icon"><Icon /></div>
+              <article className={`project-card ${brand === "pcnc" ? "pcnc-card" : ""}`} key={title}>
+                {brand === "pcnc"
+                  ? <div className="pcnc-logo"><img src="/images/logos/pcnc.png" alt="PCNC — Parcours de Croissance de la Nouvelle Création" /></div>
+                  : <div className="gold-icon"><Icon /></div>}
                 <h3>{title}</h3>
                 <p>{copy}</p>
               </article>
@@ -105,10 +107,11 @@ export default function Project() {
         <div className="solidarity-block">
           <div className="solidarity-heading">
             <div>
+              <div className="sef-logo"><img src="/images/logos/sef.png" alt="Le Secours Évangélique de France" /></div>
               <p className="eyebrow">Actions solidaires & accompagnement</p>
               <h2>Le SEF agit <span className="gold-text">déjà.</span></h2>
             </div>
-            <p>Le futur lieu offrira un cadre stable et adapté pour poursuivre et développer ces actions concrètes déjà organisées par le Secours Évangélique de France.</p>
+            <p>Association loi 1901 au service des personnes en difficulté, le SEF organise déjà ces actions concrètes. Le futur lieu offrira un cadre stable et adapté pour les poursuivre et les développer.</p>
           </div>
           <div className="solidarity-grid">
             {solidarityActions.map(({ icon, title, copy }) => {

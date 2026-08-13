@@ -172,6 +172,10 @@ linear-gradient(180deg,#03162f,#020d1d)}
 .contribution-option h3{font-size:25px;margin:28px 0 12px}
 .contribution-option p{min-height:90px;color:var(--muted);line-height:1.55}
 .contribution-options>small{grid-column:1/-1;text-align:center;color:var(--muted)}
+.donation-disclaimer{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr;gap:24px;margin-top:14px;padding:32px 36px;border:1px solid rgba(243,181,26,.42);border-radius:18px;background:linear-gradient(135deg,rgba(243,181,26,.08),rgba(255,255,255,.02))}
+.donation-disclaimer strong{display:block;color:var(--gold-2);font-size:18px}
+.donation-disclaimer p{margin:12px 0 10px;color:#d7dee8;font-size:16px;line-height:1.7}
+.donation-disclaimer cite{color:var(--gold);font-size:11px;font-style:normal;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
 .faq-section{background:#020d1d}
 .faq-grid{display:grid;grid-template-columns:.75fr 1fr;gap:70px}
 .faq-intro{max-width:520px;color:var(--muted);font-size:17px;line-height:1.65}
@@ -293,12 +297,17 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
 .project-card{min-height:300px;padding:38px}
 .project-card h3{margin:34px 0 14px;font-size:29px}
 .project-card p{max-width:530px;margin-bottom:0;font-size:16px}
+.pcnc-card{background:radial-gradient(circle at 16% 16%,rgba(112,72,155,.18),transparent 34%),rgba(255,255,255,.012)}
+.pcnc-logo{width:210px;height:74px;display:flex;align-items:center}
+.pcnc-logo img{width:100%;height:100%;object-fit:contain;object-position:left center}
 
 .solidarity-block{margin-top:112px;padding:52px;border-radius:28px;color:#07172c;background:linear-gradient(145deg,#fbf8ef,#eae3d3);box-shadow:0 34px 90px rgba(0,0,0,.28)}
 .solidarity-heading{display:grid;grid-template-columns:1fr .65fr;gap:55px;align-items:end}
 .solidarity-heading .eyebrow{color:#a66d00}
 .solidarity-heading h2{margin-bottom:0;color:#07172c;font-size:clamp(42px,5vw,70px)}
 .solidarity-heading>p{margin:0;color:#384458;font-size:17px;line-height:1.65}
+.sef-logo{width:230px;height:92px;margin-bottom:28px;padding:12px 18px;border-radius:15px;background:#07172c;box-shadow:0 12px 30px rgba(5,20,42,.14)}
+.sef-logo img{width:100%;height:100%;object-fit:contain}
 .solidarity-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:42px}
 .solidarity-card{min-width:0;min-height:225px;padding:24px 20px;border:1px solid rgba(180,126,7,.3);border-radius:17px;background:rgba(255,255,255,.56);box-shadow:0 10px 28px rgba(5,20,42,.06)}
 .solidarity-card .gold-icon{border-color:rgba(173,112,0,.45);color:#b77600;background:#fff8df}
@@ -397,6 +406,7 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
   .mission-grid::-webkit-scrollbar{display:none}
   .mission-grid{margin-top:38px;border:0}
   .project-card{min-width:80vw;min-height:250px;padding:30px;border:1px solid var(--line);scroll-snap-align:center}
+  .pcnc-logo{width:190px;height:70px}
   .solidarity-block{margin-top:76px;padding:32px 22px;border-radius:22px}
   .solidarity-heading h2{font-size:44px}
   .solidarity-grid{display:flex;gap:12px;overflow-x:auto;margin-top:30px;padding:2px 2px 15px;scroll-snap-type:x mandatory;scrollbar-width:none}
@@ -419,6 +429,9 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
   .prayer-copy{font-size:16px;line-height:1.68}
   .prayer-points{grid-template-columns:1fr}
   .prayer-heading blockquote p{font-size:21px}
+  .donation-disclaimer{grid-template-columns:1fr;padding:28px 24px}
+  .donation-disclaimer p{font-size:15px}
+  .donation-disclaimer br{display:none}
 }
 
 @media(prefers-reduced-motion:reduce){
