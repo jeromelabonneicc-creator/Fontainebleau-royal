@@ -67,7 +67,7 @@ export default function Project() {
               <div className="gold-icon"><UsersRound /></div>
               <h3>Unité</h3>
               <span className="pillar-divider" aria-hidden="true" />
-              <p>Avancer comme une seule famille, dans la prière, le partage et la mobilisation de chacun autour de la vision.</p>
+              <p>Un même projet porté par toute l’Église. Chacun comprend l’enjeu, prie, contribue selon ses possibilités et devient acteur de la progression collective.</p>
             </article>
             <div className="mobile-temple-crown" aria-hidden="true"><Crown /></div>
             <article className="temple-column-card">
@@ -75,7 +75,7 @@ export default function Project() {
               <div className="gold-icon"><HandHeart /></div>
               <h3>Sacrifice</h3>
               <span className="pillar-divider" aria-hidden="true" />
-              <p>Donner avec foi et intention pour rendre possibles la location, l’aménagement et l’installation du futur lieu.</p>
+              <p>Accepter qu’un projet de cette ampleur demande un effort réel : dons, renoncements, temps, prière, mobilisation relationnelle et persévérance.</p>
             </article>
           </div>
           <div className="temple-foundation" aria-hidden="true" />

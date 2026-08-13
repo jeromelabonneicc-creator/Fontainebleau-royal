@@ -32,7 +32,7 @@ export default function Story() {
         </div>
 
         <div className="challenge-grid">
-          <article className="challenge-card">
+          <article className="challenge-card major-challenge-card">
             <div className="gold-icon"><ShieldCheck /></div>
             <p className="eyebrow">Le défi majeur</p>
             <h3>Mobiliser les ressources nécessaires.</h3>
@@ -53,6 +53,7 @@ export default function Story() {
         <div className="prayer-block">
           <div className="prayer-heading">
             <p className="eyebrow">Bâtir dans la prière</p>
+            <h2 className="prayer-title">Prions <span className="gold-text">ensembles.</span></h2>
             <p className="prayer-copy">
               À l’image de Néhémie, nous ne voulons pas seulement bâtir avec nos forces : nous voulons prier, discerner et agir.
               La prière accompagne chaque étape du projet, depuis la recherche du lieu jusqu’à son aménagement et son ouverture.
