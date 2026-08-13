@@ -88,17 +88,18 @@ export default function Hero() {
           <div className="hero-kicker">
             <span />
             <b>♛</b>
-            <strong>Appel aux dons</strong>
+            <strong>Fontainebleau Royal — Appel aux dons</strong>
             <span />
           </div>
 
-          <h1 className="hero-title hero-title-royal">
-            <span>FONTAINEBLEAU</span>
-            <span className="gold-text">ROYAL</span>
+          <h1 className="hero-title hero-title-campaign">
+            <span className="hero-title-lead">Ensemble, mobilisons-nous !</span>
+            <span className="hero-title-main gold-text">Préparons un lieu de vie</span>
+            <span className="hero-title-place">à la gloire de Dieu au pays de Fontainebleau.</span>
           </h1>
 
           <p className="hero-copy">
-            Ensemble, participons aux travaux d’aménagement et de finition de la future salle d’ICC Fontainebleau.
+            Nous ne cherchons pas simplement à louer des murs. Nous préparons un lieu pour accueillir, équiper, servir et transmettre.
           </p>
 
           <blockquote className="hero-scripture">

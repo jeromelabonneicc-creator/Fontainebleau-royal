@@ -1,46 +1,61 @@
-import {
-  Crown,
-  GraduationCap,
-  HandHeart,
-  HeartHandshake,
-  Megaphone,
-  MessageCircleHeart,
-  Shirt,
-  ShoppingBasket,
-  Sparkles,
-  UtensilsCrossed,
-  UsersRound
-} from "lucide-react";
-import { missionActions, solidarityActions } from "@/content/campaign";
+import { Crown, HandHeart, UsersRound } from "lucide-react";
 
-const missionIcons = {
-  users: UsersRound,
-  heart: HeartHandshake,
-  graduation: GraduationCap,
-  megaphone: Megaphone
-};
-
-const solidarityIcons = {
-  utensils: UtensilsCrossed,
-  basket: ShoppingBasket,
-  hygiene: Sparkles,
-  shirt: Shirt,
-  messages: MessageCircleHeart
-};
+const visionCentres = [
+  {
+    image: "/images/BATIMENT.png",
+    title: "Un centre de refuge et de communion",
+    copy: "Un lieu où l’amour, l’acceptation, le réconfort et l’espérance restaurent les personnes, et où chacun peut trouver une véritable famille."
+  },
+  {
+    image: "/images/WORSHIP.png",
+    title: "Un centre d’adoration et de puissance spirituelle",
+    copy: "Un lieu où la puissance de la Parole transforme chaque personne en véritable adorateur, intensifie la foi et restaure les cœurs."
+  },
+  {
+    image: "/images/SALLE.png",
+    title: "Un centre de transformation et d’édification",
+    copy: "Un lieu où l’enseignement, les conférences, les séminaires et les ateliers permettent de grandir, de repousser ses limites et de développer son leadership."
+  },
+  {
+    image: "/images/PHOTO-2026-08-09-06-40-43.jpg",
+    title: "Un centre de formation, d’excellence et d’impact",
+    copy: "Un lieu qui équipe chacun pour servir efficacement, cultive l’excellence et déploie la Parole afin d’influencer positivement notre environnement."
+  }
+];
 
 export default function Project() {
   return (
     <section id="projet" className="section project" data-reveal-section>
       <div className="container">
-        <div className="project-heading project-vision-heading">
-          <div>
-            <p className="eyebrow">La vision du projet</p>
-            <h2>Un lieu consacré,<br/>une base d’impact pour <span className="gold-text">le territoire.</span></h2>
+        <div className="project-overview">
+          <div className="project-overview-copy">
+            <p className="eyebrow">Le projet d’implantation</p>
+            <h2>Bien plus qu’un local.<br/><span className="gold-text">Un lieu de vie.</span></h2>
+            <p className="project-lead">
+              Ce projet ne consiste pas simplement à louer un local. Il s’agit de permettre à ICC Fontainebleau
+              de s’implanter durablement dans un lieu adapté, afin d’être enfin fixée et de ne plus dépendre de salles temporaires.
+            </p>
+            <p>
+              <strong>Fontainebleau Royal</strong> est le nom donné à ce futur lieu de vie polyvalent — un espace « multiplex » —
+              dans lequel ICC Fontainebleau pourra rassembler ses activités, accueillir chaque public, former, servir et transmettre.
+            </p>
           </div>
-          <p>
-            Fontainebleau Royal prépare la location et l’aménagement d’un lieu stable pour ICC Fontainebleau.
-            Le lieu est un outil. La mission est le but.
-          </p>
+
+          <div className="project-overview-visual" aria-label="Projection du futur lieu d’ICC Fontainebleau">
+            <figure className="project-visual-main">
+              <img src="/images/BATIMENT.png" alt="Projection du futur bâtiment d’ICC Fontainebleau" />
+              <figcaption>Un lieu identifiable</figcaption>
+            </figure>
+            <figure className="project-visual-inset">
+              <img src="/images/SALLE.png" alt="Projection de la future salle d’ICC Fontainebleau" />
+              <figcaption>Un espace polyvalent</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div className="project-manifesto">
+          <span>Le lieu est un outil. La mission est le but.</span>
+          <strong>Nous ne cherchons pas simplement à louer des murs. Nous préparons un lieu pour accueillir, équiper, servir et transmettre.</strong>
         </div>
 
         <blockquote className="scripture-panel scripture-panel-project">
@@ -48,14 +63,52 @@ export default function Project() {
           <cite>Exode 25:8</cite>
         </blockquote>
 
+        <div id="vision" className="vision-section">
+          <div className="vision-heading">
+            <div>
+              <p className="eyebrow">La vision</p>
+              <h2>Voir au-delà de<br/><span className="gold-text">la situation actuelle.</span></h2>
+            </div>
+            <div className="vision-heading-copy">
+              <p>
+                ICC Fontainebleau prépare un lieu stable, identifiable, adapté à la croissance et capable de soutenir durablement la mission au pays de Fontainebleau.
+              </p>
+              <p>
+                Ce lieu traduira localement la vision que l’Apôtre Yvan Castanou a reçue pour ICC :
+                construire des hommes et des femmes qui inspirent et influencent positivement leur environnement pour la gloire de Dieu.
+              </p>
+            </div>
+          </div>
+
+          <div className="vision-centres">
+            {visionCentres.map(({ image, title, copy }, index) => (
+              <article className="vision-centre-card" key={title}>
+                <img src={image} alt="" />
+                <div className="vision-centre-overlay" />
+                <div className="vision-centre-copy">
+                  <span>0{index + 1}</span>
+                  <h3>{title}</h3>
+                  <p>{copy}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div className="availability-banner">
+            <strong>7 jours sur 7</strong>
+            <p>Un lieu disponible tout au long de la semaine pour accueillir la vie de l’Église, prendre soin des personnes, former, prier, servir et se rassembler.</p>
+          </div>
+        </div>
+
         <div className="pillar-heading">
-          <p className="eyebrow">Deux piliers pour avancer</p>
+          <p className="eyebrow">Deux piliers pour soutenir la vision</p>
           <h2>Une même vision portée dans <span className="gold-text">l’unité et le sacrifice.</span></h2>
           <p className="section-explainer">
-            Fontainebleau Royal ne se bâtira pas par l’effort de quelques-uns, mais par l’engagement d’une famille entière.
-            Ces deux piliers traduisent la manière dont nous voulons porter ensemble ce projet, spirituellement et concrètement.
+            Ce projet ne reposera pas sur l’effort de quelques-uns, mais sur l’engagement de toute la famille ICC Fontainebleau.
+            Ces deux piliers définissent la manière dont nous voulons avancer ensemble.
           </p>
         </div>
+
         <div className="royal-pillars" aria-label="Les deux piliers de Fontainebleau Royal">
           <div className="temple-roof" aria-hidden="true">
             <div className="temple-crown"><Crown /></div>
@@ -79,52 +132,6 @@ export default function Project() {
             </article>
           </div>
           <div className="temple-foundation" aria-hidden="true" />
-        </div>
-
-        <div className="mission-heading">
-          <p className="eyebrow">Ce que le lieu permettra</p>
-          <h2>Une mission rendue <span className="gold-text">concrète.</span></h2>
-          <p className="section-explainer">
-            Un lieu stable donnera à ICC Fontainebleau les espaces nécessaires pour accueillir chaque public avec attention,
-            accompagner les parcours de vie, former les disciples et déployer la mission dans la durée.
-          </p>
-        </div>
-        <div className="project-grid mission-grid">
-          {missionActions.map(({ icon, brand, title, copy }) => {
-            const Icon = missionIcons[icon as keyof typeof missionIcons];
-            return (
-              <article className={`project-card ${brand === "pcnc" ? "pcnc-card" : ""}`} key={title}>
-                {brand === "pcnc"
-                  ? <div className="pcnc-logo"><img src="/images/logos/pcnc.png" alt="PCNC — Parcours de Croissance de la Nouvelle Création" /></div>
-                  : <div className="gold-icon"><Icon /></div>}
-                <h3>{title}</h3>
-                <p>{copy}</p>
-              </article>
-            );
-          })}
-        </div>
-
-        <div className="solidarity-block">
-          <div className="solidarity-heading">
-            <div>
-              <div className="sef-logo"><img src="/images/logos/sef.png" alt="Le Secours Évangélique de France" /></div>
-              <p className="eyebrow">Actions solidaires & accompagnement</p>
-              <h2>Le SEF agit <span className="gold-text">déjà.</span></h2>
-            </div>
-            <p>Association loi 1901 au service des personnes en difficulté, le SEF organise déjà ces actions concrètes. Le futur lieu offrira un cadre stable et adapté pour les poursuivre et les développer.</p>
-          </div>
-          <div className="solidarity-grid">
-            {solidarityActions.map(({ icon, title, copy }) => {
-              const Icon = solidarityIcons[icon as keyof typeof solidarityIcons];
-              return (
-                <article className="solidarity-card" key={title}>
-                  <div className="gold-icon"><Icon /></div>
-                  <h3>{title}</h3>
-                  <p>{copy}</p>
-                </article>
-              );
-            })}
-          </div>
         </div>
       </div>
     </section>

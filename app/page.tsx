@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Story from "@/components/Story";
 import VideoSection from "@/components/VideoSection";
 import Project from "@/components/Project";
+import Mission from "@/components/Mission";
 import Gallery from "@/components/Gallery";
 import Donation from "@/components/Donation";
 import FAQ from "@/components/FAQ";
@@ -19,6 +20,7 @@ export default function Home() {
       <VideoSection />
       <Project />
       <Story />
+      <Mission />
       <Gallery />
       <Donation />
       <FAQ />

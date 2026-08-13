@@ -4,11 +4,11 @@ import { Menu, X } from "lucide-react";
 
 const links = [
   ["Accueil", "#accueil"],
-  ["La vision", "#projet"],
+  ["Le projet", "#projet"],
+  ["La vision", "#vision"],
   ["Histoire", "#histoire"],
   ["Galerie", "#galerie"],
   ["Contribuer", "#contribuer"],
-  ["Comprendre", "#faq"],
 ];
 
 export default function Header() {

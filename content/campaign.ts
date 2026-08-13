@@ -1,24 +1,24 @@
 export const missionActions = [
   {
     icon: "users",
-    title: "Accueillir",
-    copy: "Accueillir les familles, les jeunes, les couples et les personnes qui rejoindront ce centre de refuge, dans un cadre stable, digne et adapté."
+    title: "Des plateformes pour chaque public",
+    copy: "Déployer des plateformes adaptées aux familles, aux couples, aux hommes, aux femmes, aux jeunes et aux enfants, afin de prendre soin de nos membres et d’être au plus proche de leurs besoins."
   },
   {
     icon: "heart",
-    title: "Accompagner",
-    copy: "Proposer écoute, prière et suivi pastoral aux couples, aux familles, aux jeunes et aux personnes qui traversent une période difficile."
+    title: "Prendre soin et accompagner",
+    copy: "Proposer des bulles d’écoute pastorale, des temps de prière et un accompagnement adapté aux personnes qui traversent une période difficile ou une étape importante de leur vie."
   },
   {
     icon: "graduation",
     brand: "pcnc",
-    title: "Former avec le PCNC",
-    copy: "Le Parcours de Croissance de la Nouvelle Création réunit cinq formations pour ancrer les principes et les valeurs du Royaume : Bienvenue dans le Royaume, Fondements du Royaume, Maturité spirituelle, Restauration et Transformation Totale, puis Poïmaino."
+    title: "Un centre de formation et d’excellence",
+    copy: "Équiper et bâtir une génération d’hommes et de femmes leaders et amoureux de Dieu, au travers de plusieurs formats proposés en local : PCNC, forums d’orientation, Académie biblique et accompagnement professionnel."
   },
   {
-    icon: "megaphone",
-    title: "Évangéliser et transmettre",
-    copy: "Organiser les cultes, les temps de prière, le discipolat et les actions d’évangélisation qui font connaître Jésus-Christ sur le territoire."
+    icon: "church",
+    title: "Un centre de rassemblement",
+    copy: "Disposer d’un lieu adapté pour nos cultes, nos conférences, nos temps de prière et nos activités locales, accessible tout au long de la semaine."
   }
 ];
 
