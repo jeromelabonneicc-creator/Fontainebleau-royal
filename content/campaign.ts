@@ -17,7 +17,7 @@ export const missionActions = [
   {
     icon: "megaphone",
     title: "Évangéliser et transmettre",
-    copy: "Organiser les cultes, les temps de prière, le discipulat et les actions d’évangélisation qui font connaître Jésus-Christ sur le territoire."
+    copy: "Organiser les cultes, les temps de prière, le discipolat et les actions d’évangélisation qui font connaître Jésus-Christ sur le territoire."
   }
 ];
 

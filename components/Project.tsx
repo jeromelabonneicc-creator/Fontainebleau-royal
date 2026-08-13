@@ -1,4 +1,5 @@
 import {
+  Crown,
   GraduationCap,
   HandHeart,
   HeartHandshake,
@@ -50,25 +51,43 @@ export default function Project() {
         <div className="pillar-heading">
           <p className="eyebrow">Deux piliers pour avancer</p>
           <h2>Une même vision portée dans <span className="gold-text">l’unité et le sacrifice.</span></h2>
+          <p className="section-explainer">
+            Fontainebleau Royal ne se bâtira pas par l’effort de quelques-uns, mais par l’engagement d’une famille entière.
+            Ces deux piliers traduisent la manière dont nous voulons porter ensemble ce projet, spirituellement et concrètement.
+          </p>
         </div>
-        <div className="royal-pillars">
-          <article>
-            <div className="gold-icon"><UsersRound /></div>
-            <span>01</span>
-            <h3>Unité</h3>
-            <p>Avancer comme une seule famille, dans la prière, le partage et la mobilisation de chacun autour de la vision.</p>
-          </article>
-          <article>
-            <div className="gold-icon"><HandHeart /></div>
-            <span>02</span>
-            <h3>Sacrifice</h3>
-            <p>Donner avec foi et intention pour rendre possibles la location, l’aménagement et l’installation du futur lieu.</p>
-          </article>
+        <div className="royal-pillars" aria-label="Les deux piliers de Fontainebleau Royal">
+          <div className="temple-roof" aria-hidden="true">
+            <div className="temple-crown"><Crown /></div>
+          </div>
+          <div className="temple-beam" aria-hidden="true"><span>01</span><span>02</span></div>
+          <div className="temple-columns">
+            <article className="temple-column-card">
+              <span className="pillar-number">01</span>
+              <div className="gold-icon"><UsersRound /></div>
+              <h3>Unité</h3>
+              <span className="pillar-divider" aria-hidden="true" />
+              <p>Avancer comme une seule famille, dans la prière, le partage et la mobilisation de chacun autour de la vision.</p>
+            </article>
+            <div className="mobile-temple-crown" aria-hidden="true"><Crown /></div>
+            <article className="temple-column-card">
+              <span className="pillar-number">02</span>
+              <div className="gold-icon"><HandHeart /></div>
+              <h3>Sacrifice</h3>
+              <span className="pillar-divider" aria-hidden="true" />
+              <p>Donner avec foi et intention pour rendre possibles la location, l’aménagement et l’installation du futur lieu.</p>
+            </article>
+          </div>
+          <div className="temple-foundation" aria-hidden="true" />
         </div>
 
         <div className="mission-heading">
           <p className="eyebrow">Ce que le lieu permettra</p>
           <h2>Une mission rendue <span className="gold-text">concrète.</span></h2>
+          <p className="section-explainer">
+            Un lieu stable donnera à ICC Fontainebleau les espaces nécessaires pour accueillir chaque public avec attention,
+            accompagner les parcours de vie, former les disciples et déployer la mission dans la durée.
+          </p>
         </div>
         <div className="project-grid mission-grid">
           {missionActions.map(({ icon, title, copy }) => {

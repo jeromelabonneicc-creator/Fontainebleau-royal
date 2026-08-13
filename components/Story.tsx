@@ -36,7 +36,7 @@ export default function Story() {
             <div className="gold-icon"><ShieldCheck /></div>
             <p className="eyebrow">Le défi majeur</p>
             <h3>Mobiliser les ressources nécessaires.</h3>
-            <p>Un projet porté par ICC Fontainebleau et par les contributeurs du territoire.</p>
+            <p>Le défi consiste à réunir, sur fonds propres, les ressources qui permettront de passer de la vision à une installation concrète. C’est un projet porté par ICC Fontainebleau et par les contributeurs du territoire.</p>
             <ul>
               {projectNeeds.map((need) => <li key={need}><Check />{need}</li>)}
             </ul>
@@ -45,7 +45,7 @@ export default function Story() {
             <div className="gold-icon"><Church /></div>
             <p className="eyebrow">La portée spirituelle</p>
             <h3>Un lieu consacré à Dieu.</h3>
-            <p>Un lieu de prière, d’adoration, d’enseignement de la Parole, de salut, de formation, de communion fraternelle et d’envoi.</p>
+            <p>Au-delà de sa fonction pratique, ce lieu sera mis à part pour Dieu : un cadre où les personnes pourront prier, adorer, recevoir l’enseignement de la Parole, être restaurées, formées et envoyées.</p>
             <strong>Un autel au service de la mission sur le territoire.</strong>
           </article>
         </div>
@@ -53,13 +53,20 @@ export default function Story() {
         <div className="prayer-block">
           <div className="prayer-heading">
             <p className="eyebrow">Bâtir dans la prière</p>
+            <p className="prayer-copy">
+              À l’image de Néhémie, nous ne voulons pas seulement bâtir avec nos forces : nous voulons prier, discerner et agir.
+              La prière accompagne chaque étape du projet, depuis la recherche du lieu jusqu’à son aménagement et son ouverture.
+            </p>
             <blockquote>
               <p>« Nous priâmes notre Dieu, et nous établîmes une garde jour et nuit. »</p>
               <cite>Néhémie 4:9</cite>
             </blockquote>
           </div>
-          <div className="prayer-points">
-            {prayerPoints.map((point) => <div key={point}><span>✦</span><p>{point}</p></div>)}
+          <div>
+            <p className="prayer-points-intro">Nous nous accordons notamment dans la prière pour :</p>
+            <div className="prayer-points">
+              {prayerPoints.map((point) => <div key={point}><span>✦</span><p>{point}</p></div>)}
+            </div>
           </div>
         </div>
       </div>

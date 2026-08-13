@@ -263,13 +263,30 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
 .scripture-panel::after{content:"✦";position:absolute;right:25px;top:12px;color:rgba(243,181,26,.15);font-size:82px}
 .scripture-panel p{position:relative;z-index:1;margin:0;max-width:950px;font-size:clamp(23px,2.3vw,35px);line-height:1.35;font-weight:700}
 .scripture-panel cite{position:relative;z-index:1;display:block;margin-top:15px;color:var(--gold);font-size:12px;font-style:normal;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
-.pillar-heading{margin-top:110px;max-width:1000px}
-.royal-pillars{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:48px}
-.royal-pillars article{position:relative;min-height:280px;padding:36px;border:1px solid rgba(243,181,26,.26);border-radius:20px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.014));overflow:hidden}
-.royal-pillars article::after{content:"";position:absolute;width:220px;height:220px;right:-100px;bottom:-120px;border:1px solid rgba(243,181,26,.17);border-radius:50%}
-.royal-pillars article>span{position:absolute;right:30px;top:28px;color:rgba(243,181,26,.45);font-size:12px;font-weight:800;letter-spacing:.16em}
-.royal-pillars h3{margin:38px 0 12px;font-size:34px}
-.royal-pillars p{max-width:510px;margin:0;color:#bac4d2;font-size:17px;line-height:1.65}
+.pillar-heading{margin-top:110px;max-width:1050px}
+.section-explainer{max-width:800px;margin:6px 0 0;color:#bac4d2;font-size:18px;line-height:1.72}
+.royal-pillars{position:relative;margin-top:62px;padding:0 5.5% 56px}
+.temple-roof{position:relative;height:145px;margin:0 -3.5%;filter:drop-shadow(0 18px 32px rgba(0,0,0,.24))}
+.temple-roof::before,.temple-roof::after{content:"";position:absolute;clip-path:polygon(50% 0,100% 72%,100% 100%,0 100%,0 72%)}
+.temple-roof::before{inset:0;background:linear-gradient(90deg,rgba(243,181,26,.22),rgba(255,212,94,.7),rgba(243,181,26,.22))}
+.temple-roof::after{inset:2px;background:linear-gradient(150deg,#0d2747,#07192f 70%)}
+.temple-crown{position:absolute;z-index:2;left:50%;top:46%;width:76px;height:76px;display:grid;place-items:center;transform:translate(-50%,-50%);border:1px solid rgba(243,181,26,.58);border-radius:50%;color:var(--gold-2);background:#091d38;box-shadow:0 0 36px rgba(243,181,26,.08)}
+.temple-crown svg{width:36px;height:36px;stroke-width:1.55}
+.temple-beam{position:relative;z-index:2;height:52px;margin-top:-1px;display:grid;grid-template-columns:repeat(2,1fr);align-items:center;border:1px solid rgba(243,181,26,.34);background:linear-gradient(180deg,#0d2746,#08192f);box-shadow:0 12px 28px rgba(0,0,0,.22)}
+.temple-beam span{text-align:center;color:var(--gold-2);font-size:22px;font-weight:800;letter-spacing:.14em;text-shadow:0 0 16px rgba(243,181,26,.28)}
+.temple-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19%;padding:42px 5.5% 0}
+.temple-column-card{position:relative;min-height:460px;padding:48px 34px 44px;display:flex;flex-direction:column;align-items:center;text-align:center;border-left:1px solid rgba(243,181,26,.36);border-right:1px solid rgba(243,181,26,.36);background:linear-gradient(90deg,rgba(255,255,255,.015),rgba(255,255,255,.055),rgba(255,255,255,.015));box-shadow:inset 0 0 38px rgba(4,15,31,.65)}
+.temple-column-card::before,.temple-column-card::after{content:"";position:absolute;left:-8%;width:116%;height:25px;border:1px solid rgba(243,181,26,.36);background:linear-gradient(180deg,#0c2442,#08192f);box-shadow:0 -14px 0 -4px #0b213d,0 -14px 0 -3px rgba(243,181,26,.29),0 14px 0 -4px #07182e,0 14px 0 -3px rgba(243,181,26,.29)}
+.temple-column-card::before{top:-24px}
+.temple-column-card::after{top:auto;bottom:-24px;transform:scaleY(-1)}
+.pillar-number{display:none}
+.temple-column-card .gold-icon{width:98px;height:98px;margin-top:8px;background:rgba(243,181,26,.035)}
+.temple-column-card .gold-icon svg{width:43px;height:43px}
+.royal-pillars h3{margin:28px 0 14px;font-size:36px}
+.pillar-divider{width:66px;height:2px;margin:6px 0 22px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.royal-pillars p{max-width:410px;margin:0;color:#c6ced9;font-size:18px;line-height:1.72}
+.temple-foundation{height:34px;margin-top:23px;border-top:1px solid rgba(243,181,26,.48);border-bottom:1px solid rgba(243,181,26,.25);background:linear-gradient(180deg,#0c2443,#06172e);box-shadow:0 14px 0 -4px #091d37,0 14px 0 -3px rgba(243,181,26,.25),0 28px 0 -8px #07172d,0 28px 0 -7px rgba(243,181,26,.35),0 31px 36px rgba(0,0,0,.4)}
+.mobile-temple-crown{display:none}
 .gold-icon{width:58px;height:58px;display:grid;place-items:center;border:1px solid rgba(243,181,26,.5);border-radius:50%;color:var(--gold);background:rgba(243,181,26,.08);box-shadow:inset 0 0 24px rgba(243,181,26,.05)}
 .gold-icon svg{width:27px;height:27px;stroke-width:1.7}
 .mission-heading{margin-top:112px}
@@ -311,8 +328,10 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
 .spiritual-card strong{display:block;margin-top:34px;padding-top:20px;border-top:1px solid rgba(243,181,26,.32);color:var(--gold-2);font-size:18px;line-height:1.5}
 .prayer-block{display:grid;grid-template-columns:.7fr 1fr;gap:65px;margin-top:20px;padding:50px;border:1px solid rgba(243,181,26,.3);border-radius:22px;background:linear-gradient(145deg,rgba(243,181,26,.07),rgba(255,255,255,.02))}
 .prayer-heading blockquote{margin:34px 0 0}
+.prayer-copy{margin:26px 0 0;color:#c9d2de;font-size:17px;line-height:1.7}
 .prayer-heading blockquote p{margin:0;font-size:24px;line-height:1.45;font-weight:700}
 .prayer-heading cite{display:block;margin-top:15px;color:var(--gold);font-size:12px;font-style:normal;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.prayer-points-intro{margin:0 0 8px;color:var(--gold-2);font-size:14px;font-weight:700;line-height:1.5}
 .prayer-points{display:grid;grid-template-columns:repeat(2,1fr);gap:0 26px}
 .prayer-points>div{display:flex;gap:12px;align-items:flex-start;padding:17px 0;border-bottom:1px solid var(--line)}
 .prayer-points span{color:var(--gold)}
@@ -324,6 +343,25 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
   .solidarity-grid{grid-template-columns:repeat(3,1fr)}
   .prophecy-grid{grid-template-columns:repeat(2,1fr)}
   .prayer-points{grid-template-columns:repeat(2,1fr)}
+}
+
+@media(max-width:820px){
+  .royal-pillars{display:block;margin-top:44px;padding:0 4px 8px;overflow:visible}
+  .temple-roof,.temple-beam,.temple-foundation{display:none}
+  .temple-columns{display:grid;grid-template-columns:1fr;gap:0;padding:0}
+  .temple-column-card{min-height:390px;padding:48px 34px 42px;border:1px solid rgba(243,181,26,.46);border-radius:28px;background:radial-gradient(circle at 50% 14%,rgba(24,62,103,.38),transparent 36%),linear-gradient(145deg,#0b2341,#06172e);box-shadow:inset 0 0 42px rgba(3,12,27,.5),0 22px 42px rgba(0,0,0,.2);overflow:hidden}
+  .temple-column-card::before,.temple-column-card::after{display:none}
+  .pillar-number{position:absolute;left:0;top:0;width:74px;height:58px;display:grid;place-items:center;border-radius:0 0 18px 0;color:#07172c;background:linear-gradient(145deg,#ffd45e,#e4a600);font-size:20px;font-weight:900;letter-spacing:.08em;box-shadow:0 8px 24px rgba(243,181,26,.15)}
+  .temple-column-card .gold-icon{width:112px;height:112px;margin-top:0}
+  .temple-column-card .gold-icon svg{width:48px;height:48px}
+  .royal-pillars h3{margin:28px 0 12px;font-size:36px}
+  .royal-pillars p{max-width:520px;font-size:18px;line-height:1.7}
+  .mobile-temple-crown{position:relative;z-index:3;width:72px;height:72px;margin:-36px auto;display:grid;place-items:center;border:1px solid rgba(243,181,26,.62);border-radius:50%;color:var(--gold-2);background:#091d38;box-shadow:0 0 0 8px #07172c,0 0 30px rgba(243,181,26,.12)}
+  .mobile-temple-crown::before,.mobile-temple-crown::after{content:"";position:absolute;z-index:-1;left:50%;width:1px;height:38px;background:rgba(243,181,26,.48)}
+  .mobile-temple-crown::before{bottom:100%}
+  .mobile-temple-crown::after{top:100%}
+  .mobile-temple-crown svg{width:34px;height:34px;stroke-width:1.5}
+  .temple-column-card+.mobile-temple-crown+.temple-column-card{padding-top:58px}
 }
 
 @media(max-width:720px){
@@ -344,11 +382,14 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
   .scripture-panel p{font-size:21px}
   .scripture-panel::after{right:10px;font-size:58px}
   .pillar-heading,.mission-heading{margin-top:74px}
-  .royal-pillars,.mission-grid,.challenge-grid{display:flex;gap:12px;overflow-x:auto;padding:2px 2px 16px;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-inline:contain}
-  .royal-pillars::-webkit-scrollbar,.mission-grid::-webkit-scrollbar,.challenge-grid::-webkit-scrollbar{display:none}
+  .section-explainer{font-size:16px;line-height:1.68}
   .royal-pillars{margin-top:34px}
-  .royal-pillars article{min-width:79vw;min-height:245px;padding:28px;scroll-snap-align:center}
-  .royal-pillars h3{margin-top:30px}
+  .temple-column-card{min-height:370px;padding:44px 25px 38px;border-radius:24px}
+  .temple-column-card .gold-icon{width:100px;height:100px}
+  .royal-pillars h3{margin-top:24px;font-size:33px}
+  .royal-pillars p{font-size:16px;line-height:1.68}
+  .mission-grid,.challenge-grid{display:flex;gap:12px;overflow-x:auto;padding:2px 2px 16px;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-inline:contain}
+  .mission-grid::-webkit-scrollbar,.challenge-grid::-webkit-scrollbar{display:none}
   .mission-grid{margin-top:38px;border:0}
   .project-card{min-width:80vw;min-height:250px;padding:30px;border:1px solid var(--line);scroll-snap-align:center}
   .solidarity-block{margin-top:76px;padding:32px 22px;border-radius:22px}
@@ -365,6 +406,7 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
   .challenge-grid{margin-top:72px}
   .challenge-card{min-width:84vw;padding:30px 25px;scroll-snap-align:center}
   .prayer-block{margin-top:18px;padding:32px 24px}
+  .prayer-copy{font-size:16px;line-height:1.68}
   .prayer-points{grid-template-columns:1fr}
   .prayer-heading blockquote p{font-size:21px}
 }
