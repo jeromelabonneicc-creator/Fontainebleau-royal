@@ -30,7 +30,7 @@ const visionCentres = [
   },
   {
     image: "/images/vision/lieu-ouvert-territoire.jpg",
-    objectPosition: "50% center",
+    objectPosition: "50% 42%",
     title: "Un lieu ouvert sur le territoire",
     copy: "Un espace polyvalent capable d’accueillir les activités de l’Église, mais également des mariages, séminaires, conférences et événements compatibles avec la vocation du lieu, afin de contribuer au rayonnement du territoire de Fontainebleau."
   }
