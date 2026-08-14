@@ -8,7 +8,7 @@ export const solidarityActions = [
 
 export const propheticVoices = [
   {
-    name: "Pasteur Fortune Jocelyne",
+    name: "Pasteur Jocelyne Fortuné",
     video: "/videos/prophecies/pasteur-jocelyne.mp4",
     poster: "/videos/prophecies/pasteur-jocelyne-poster.jpg",
     objectPosition: "45% center"
