@@ -19,29 +19,31 @@ export default function Donation() {
             <span>Dans la durée</span>
             <h3>Contribution mensuelle</h3>
             <p>Un engagement régulier qui soutient la mobilisation jusqu’à l’installation dans le futur lieu.</p>
-            <a className="btn btn-gold btn-full" href="https://dons2.egliseicc.com/" target="_blank" rel="noreferrer">Contribuer mensuellement →</a>
           </article>
           <article className="contribution-option">
             <span>En toute liberté</span>
             <h3>Don libre</h3>
             <p>Une contribution ponctuelle, selon le montant que vous avez à cœur de donner.</p>
-            <a className="btn btn-outline btn-full" href="https://dons2.egliseicc.com/" target="_blank" rel="noreferrer">Faire un don libre →</a>
           </article>
-          <small>Précisez « ICC Fontainebleau » lors de votre contribution.</small>
-        </div>
 
-        <aside className="donation-disclaimer">
-          <div className="gold-icon"><ShieldCheck /></div>
-          <div>
-            <strong>Donner librement et en conscience</strong>
-            <p>
-              « Ne vous endettez jamais pour donner à Dieu. Donnez selon votre niveau de foi et votre prospérité,
-              <br />{" "}
-              Lorsque vous donnez, faites-le en toute conscience et liberté, avec joie, sans contrainte, ni regret. »
-            </p>
-            <cite>2 Corinthiens 9:7</cite>
+          <div className="contribution-action">
+            <strong>Précisez « ICC Fontainebleau » lors de votre contribution.</strong>
+            <a className="btn btn-gold btn-full" href="https://dons2.egliseicc.com/" target="_blank" rel="noreferrer">Je contribue au projet →</a>
           </div>
-        </aside>
+
+          <aside className="donation-disclaimer">
+            <div className="gold-icon"><ShieldCheck /></div>
+            <div>
+              <strong>Donner librement et en conscience</strong>
+              <p>
+                « Ne vous endettez jamais pour donner à Dieu. Donnez selon votre niveau de foi et votre prospérité,
+                <br />{" "}
+                Lorsque vous donnez, faites-le en toute conscience et liberté, avec joie, sans contrainte, ni regret. »
+              </p>
+              <cite>2 Corinthiens 9:7</cite>
+            </div>
+          </aside>
+        </div>
       </div>
     </section>
   );

@@ -92,13 +92,14 @@ export default function Hero() {
             <span />
           </div>
 
-          <h1 className="hero-title hero-title-royal">
-            <span>FONTAINEBLEAU</span>
-            <span className="gold-text">ROYAL</span>
+          <h1 className="hero-title hero-title-campaign">
+            <span className="hero-title-main">Fontainebleau <span className="gold-text">Royal</span></span>
+            <span className="hero-title-lead">Ensemble, mobilisons-nous !</span>
+            <span className="hero-title-place">Préparons un lieu de vie à la gloire de Dieu au pays de Fontainebleau.</span>
           </h1>
 
           <p className="hero-copy">
-            Ensemble, participons aux travaux d’aménagement et de finition de la future salle d’ICC Fontainebleau.
+            Nous ne cherchons pas simplement à louer des murs. Nous préparons un lieu pour accueillir, équiper, servir et transmettre.
           </p>
 
           <blockquote className="hero-scripture">

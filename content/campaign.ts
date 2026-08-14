@@ -1,27 +1,3 @@
-export const missionActions = [
-  {
-    icon: "users",
-    title: "Accueillir",
-    copy: "Accueillir les familles, les jeunes, les couples et les personnes qui rejoindront ce centre de refuge, dans un cadre stable, digne et adapté."
-  },
-  {
-    icon: "heart",
-    title: "Accompagner",
-    copy: "Proposer écoute, prière et suivi pastoral aux couples, aux familles, aux jeunes et aux personnes qui traversent une période difficile."
-  },
-  {
-    icon: "graduation",
-    brand: "pcnc",
-    title: "Former avec le PCNC",
-    copy: "Le Parcours de Croissance de la Nouvelle Création réunit cinq formations pour ancrer les principes et les valeurs du Royaume : Bienvenue dans le Royaume, Fondements du Royaume, Maturité spirituelle, Restauration et Transformation Totale, puis Poïmaino."
-  },
-  {
-    icon: "megaphone",
-    title: "Évangéliser et transmettre",
-    copy: "Organiser les cultes, les temps de prière, le discipolat et les actions d’évangélisation qui font connaître Jésus-Christ sur le territoire."
-  }
-];
-
 export const solidarityActions = [
   { icon: "utensils", title: "Restaurant solidaire", copy: "à prix symbolique" },
   { icon: "basket", title: "Paniers alimentaires", copy: "offerts" },
@@ -31,10 +7,25 @@ export const solidarityActions = [
 ];
 
 export const propheticVoices = [
-  "Pasteur Jocelyne",
-  "Pasteur Paul Mbonda",
-  "Pasteur Celia",
-  "Pasteur Sita"
+  { name: "Pasteur Jocelyne", video: "", poster: "", objectPosition: "50% center" },
+  {
+    name: "Pasteur Paul Mbonda",
+    video: "/videos/prophecies/pasteur-paul.mp4",
+    poster: "/videos/prophecies/pasteur-paul-poster.jpg",
+    objectPosition: "18% center"
+  },
+  {
+    name: "Pasteur Celia",
+    video: "/videos/prophecies/pasteur-celia.mp4",
+    poster: "/videos/prophecies/pasteur-celia-poster.jpg",
+    objectPosition: "52% center"
+  },
+  {
+    name: "Pasteur Sita",
+    video: "/videos/prophecies/pasteur-sita.mp4",
+    poster: "/videos/prophecies/pasteur-sita-poster.jpg",
+    objectPosition: "32% center"
+  }
 ];
 
 export const projectNeeds = [
@@ -45,12 +36,36 @@ export const projectNeeds = [
 ];
 
 export const prayerPoints = [
-  "La faveur dans les démarches et les négociations",
-  "La provision et la générosité",
-  "L’unité de toute la famille ICC Fontainebleau",
-  "La protection contre les blocages et le découragement",
-  "Le bon déroulement des travaux et de l’installation",
-  "Un lieu qui serve pleinement la mission et porte du fruit"
+  {
+    point: "La faveur dans les démarches et les négociations",
+    quote: "Le roi me donna ces lettres, car la bonne main de mon Dieu était sur moi.",
+    verse: "Néhémie 2:8"
+  },
+  {
+    point: "La provision et la générosité",
+    quote: "Dieu peut vous combler de toutes sortes de grâces.",
+    verse: "2 Corinthiens 9:8"
+  },
+  {
+    point: "L’unité de toute la famille ICC Fontainebleau",
+    quote: "Qu’il est agréable, qu’il est doux pour des frères de demeurer ensemble !",
+    verse: "Psaume 133:1"
+  },
+  {
+    point: "La protection contre les blocages et le découragement",
+    quote: "Nous priâmes notre Dieu, et nous établîmes une garde jour et nuit.",
+    verse: "Néhémie 4:9"
+  },
+  {
+    point: "Le bon déroulement des travaux et de l’installation",
+    quote: "Affermis l’ouvrage de nos mains, oui, affermis l’ouvrage de nos mains !",
+    verse: "Psaume 90:17"
+  },
+  {
+    point: "Un lieu qui serve pleinement la mission et porte du fruit",
+    quote: "Je vous ai établis, afin que vous alliez, que vous portiez du fruit, et que votre fruit demeure.",
+    verse: "Jean 15:16"
+  }
 ];
 
 export const campaignSteps = [
