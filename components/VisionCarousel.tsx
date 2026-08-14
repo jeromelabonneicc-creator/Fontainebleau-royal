@@ -3,18 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-type VisionCentre = {
-  image: string;
-  objectPosition: string;
-  title: string;
-  copy: string;
-  credit?: {
-    label: string;
-    href: string;
-  };
-};
-
-const visionCentres: VisionCentre[] = [
+const visionCentres = [
   {
     image: "/images/vision/communion-fraternelle.jpg",
     objectPosition: "50% center",
@@ -41,13 +30,9 @@ const visionCentres: VisionCentre[] = [
   },
   {
     image: "/images/vision/lieu-ouvert-territoire.jpg",
-    objectPosition: "50% center",
+    objectPosition: "50% 38%",
     title: "Un lieu ouvert sur le territoire",
-    copy: "Un espace polyvalent capable d’accueillir les activités de l’Église, mais également des mariages, séminaires, conférences et événements compatibles avec la vocation du lieu, afin de contribuer au rayonnement du territoire de Fontainebleau.",
-    credit: {
-      label: "© Raimond Spekking · CC BY-SA 4.0",
-      href: "https://commons.wikimedia.org/wiki/File:Townhall-Meeting_zur_deutsch-franz%C3%B6sischen_Zusammenarbeit_im_Rathaus_K%C3%B6ln-0862.jpg"
-    }
+    copy: "Un espace polyvalent capable d’accueillir les activités de l’Église, mais également des mariages, séminaires, conférences et événements compatibles avec la vocation du lieu, afin de contribuer au rayonnement du territoire de Fontainebleau."
   }
 ];
 
@@ -165,7 +150,7 @@ export default function VisionCarousel() {
         onPointerUp={onPointerUp}
         onPointerCancel={() => { pointerStart.current = null; }}
       >
-        {visionCentres.map(({ image, objectPosition, title, copy, credit }, index) => (
+        {visionCentres.map(({ image, objectPosition, title, copy }, index) => (
           <div
             className={`vision-carousel-slide ${index === active ? "is-active" : ""}`}
             role="group"
@@ -176,17 +161,6 @@ export default function VisionCarousel() {
           >
             <img className="vision-carousel-image" src={image} alt="" style={{ objectPosition }} />
             <div className="vision-carousel-overlay" />
-            {credit ? (
-              <a
-                className="vision-carousel-credit"
-                href={credit.href}
-                target="_blank"
-                rel="noreferrer"
-                tabIndex={index === active ? 0 : -1}
-              >
-                {credit.label}
-              </a>
-            ) : null}
             <div className="vision-carousel-copy">
               <span>0{index + 1}</span>
               <h3>{title}</h3>
