@@ -6,23 +6,33 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const visionCentres = [
   {
     image: "/images/vision/communion-fraternelle.jpg",
+    objectPosition: "50% center",
     title: "Un centre de refuge et de communion",
     copy: "Un lieu où l’amour, l’acceptation, le réconfort et l’espérance restaurent les personnes, et où chacun peut trouver une véritable famille."
   },
   {
     image: "/images/WORSHIP.png",
+    objectPosition: "50% center",
     title: "Un centre d’adoration et de puissance spirituelle",
     copy: "Un lieu où la puissance de la Parole transforme chaque personne en véritable adorateur, intensifie la foi et restaure les cœurs."
   },
   {
     image: "/images/SALLE.png",
+    objectPosition: "50% center",
     title: "Un centre de transformation et d’édification",
     copy: "Un lieu où l’enseignement, les conférences, les séminaires et les ateliers permettent de grandir, de repousser ses limites et de développer son leadership."
   },
   {
     image: "/images/vision/formation-excellence.jpg",
+    objectPosition: "55% center",
     title: "Un centre de formation, d’excellence et d’impact",
     copy: "Un lieu qui équipe chacun pour servir efficacement, cultive l’excellence et déploie la Parole afin d’influencer positivement notre environnement."
+  },
+  {
+    image: "/images/vision/lieu-ouvert-territoire.jpg",
+    objectPosition: "50% center",
+    title: "Un lieu ouvert sur le territoire",
+    copy: "Un espace polyvalent capable d’accueillir les activités de l’Église, mais également des mariages, séminaires, conférences et événements compatibles avec la vocation du lieu, afin de contribuer au rayonnement du territoire de Fontainebleau."
   }
 ];
 
@@ -130,7 +140,7 @@ export default function VisionCarousel() {
         className="vision-carousel-stage"
         role="region"
         aria-roledescription="carrousel"
-        aria-label="Les quatre dimensions de la vision"
+        aria-label="Les cinq dimensions de la vision"
         tabIndex={0}
         onKeyDown={(event) => {
           if (event.key === "ArrowLeft") select(active - 1);
@@ -140,7 +150,7 @@ export default function VisionCarousel() {
         onPointerUp={onPointerUp}
         onPointerCancel={() => { pointerStart.current = null; }}
       >
-        {visionCentres.map(({ image, title, copy }, index) => (
+        {visionCentres.map(({ image, objectPosition, title, copy }, index) => (
           <div
             className={`vision-carousel-slide ${index === active ? "is-active" : ""}`}
             role="group"
@@ -149,7 +159,7 @@ export default function VisionCarousel() {
             aria-hidden={index !== active}
             key={title}
           >
-            <img className="vision-carousel-image" src={image} alt="" />
+            <img className="vision-carousel-image" src={image} alt="" style={{ objectPosition }} />
             <div className="vision-carousel-overlay" />
             <div className="vision-carousel-copy">
               <span>0{index + 1}</span>
