@@ -7,7 +7,12 @@ export const solidarityActions = [
 ];
 
 export const propheticVoices = [
-  { name: "Pasteur Jocelyne", video: "", poster: "", objectPosition: "50% center" },
+  {
+    name: "Pasteur Fortune Jocelyne",
+    video: "/videos/prophecies/pasteur-jocelyne.mp4",
+    poster: "/videos/prophecies/pasteur-jocelyne-poster.jpg",
+    objectPosition: "45% center"
+  },
   {
     name: "Pasteur Paul Mbonda",
     video: "/videos/prophecies/pasteur-paul.mp4",
@@ -15,13 +20,13 @@ export const propheticVoices = [
     objectPosition: "18% center"
   },
   {
-    name: "Pasteur Celia",
+    name: "Pasteur Célia Manfoundou",
     video: "/videos/prophecies/pasteur-celia.mp4",
     poster: "/videos/prophecies/pasteur-celia-poster.jpg",
     objectPosition: "52% center"
   },
   {
-    name: "Pasteur Sita",
+    name: "Pasteur Sita Koyamba",
     video: "/videos/prophecies/pasteur-sita.mp4",
     poster: "/videos/prophecies/pasteur-sita-poster.jpg",
     objectPosition: "32% center"

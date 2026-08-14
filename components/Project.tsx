@@ -82,7 +82,11 @@ export default function Project() {
               <div className="gold-icon"><UsersRound /></div>
               <h3>Unité</h3>
               <span className="pillar-divider" aria-hidden="true" />
-              <p>Un même projet porté par toute l’Église. Chacun comprend l’enjeu, prie, contribue selon ses possibilités et devient acteur de la progression collective.</p>
+              <div className="pillar-copy">
+                <strong>Un même projet porté par toute l’Église.</strong>
+                <p>Le peuple que Dieu s’est acquis sur le territoire se mobilise autour d’une même vision : comprendre l’enjeu, prier et contribuer selon ses possibilités.</p>
+                <p>Et au-delà d’ICC Fontainebleau, toute personne qui a à cœur de soutenir cette implantation peut également prendre part à cette histoire.</p>
+              </div>
             </article>
             <div className="mobile-temple-crown" aria-hidden="true"><Crown /></div>
             <article className="temple-column-card">

@@ -12,13 +12,18 @@ export default function Story() {
               <h2>La vision a été<br/><span className="gold-text">annoncée.</span></h2>
             </div>
             <blockquote className="scripture-panel story-scripture">
-              <p>« Mets la vision par écrit, grave-la sur des tables afin qu’on la lise couramment. »</p>
-              <cite>Habacuc 2:2 — Segond 21</cite>
+              <p>
+                « L’Éternel m’adressa la parole, et il dit : Écris la prophétie : Grave-la sur des tables,
+                afin qu’on la lise couramment. Car c’est une prophétie dont le temps est déjà fixé, elle marche
+                vers son terme, et elle ne mentira pas ; si elle tarde, attends-la, car elle s’accomplira,
+                elle s’accomplira certainement. »
+              </p>
+              <cite>Habacuc 2:2-3 — LSG</cite>
             </blockquote>
           </div>
 
           <p className="prophecy-lead">
-            Plusieurs paroles prophétiques ont confirmé la vision du futur lieu. Retrouvez prochainement ici les prises de parole des pasteurs qui l’ont portée.
+            Plusieurs paroles prophétiques ont confirmé la vision du futur lieu. Retrouvez ici les prises de parole des pasteurs qui l’ont portée.
           </p>
 
           <div className="prophecy-video-grid">
@@ -65,6 +70,14 @@ export default function Story() {
             sans dépendre de la Cité ou d’organismes extérieurs.
           </p>
 
+          <figure className="challenge-illustration">
+            <img
+              src="/images/illustrations/exode-vases-or-argent.jpg"
+              alt="Illustration du peuple apportant des vases d’or et d’argent pour contribuer à la construction"
+            />
+            <figcaption>Illustration inspirée d’Exode 11:2</figcaption>
+          </figure>
+
           <div className="challenge-biblical-support">
             <blockquote>
               <p>« Vous êtes […] un peuple acquis, afin que vous annonciez les vertus de celui qui vous a appelés. »</p>
@@ -88,14 +101,18 @@ export default function Story() {
             <p className="eyebrow">La portée spirituelle du projet</p>
             <h3>Un lieu consacré à Dieu.</h3>
             <p>
-              Au-delà de sa fonction pratique, ce lieu sera mis à part pour Dieu : un cadre où les personnes pourront prier,
-              adorer, recevoir l’enseignement de la Parole, être restaurées, formées et envoyées.
+              Au-delà d’un lieu de rassemblement, nous voulons établir à Fontainebleau un espace mis à part pour Dieu,
+              où Son nom sera invoqué, Sa présence recherchée, Sa Parole annoncée et des vies transformées.
             </p>
-            <strong>Un autel au service de la mission.</strong>
-            <blockquote className="spiritual-verse">
-              <p>« Il bâtit là un autel […] car c’est là que Dieu s’était révélé à lui. »</p>
-              <cite>Genèse 35:7</cite>
-            </blockquote>
+            <p>
+              Dans la Bible, l’autel marque la consécration d’un lieu à Dieu. Lorsqu’Abraham arriva sur le territoire
+              où Dieu l’avait conduit, il « bâtit là un autel à l’Éternel, et invoqua le nom de l’Éternel » (Genèse 12:8).
+            </p>
+            <p>
+              Fontainebleau Royal porte aussi cette dimension : établir sur le territoire un lieu dédié à Dieu,
+              un point d’ancrage pour la prière, l’adoration, la Parole, la formation et l’annonce de l’Évangile,
+              afin que des vies soient transformées et que l’Église puisse durablement accomplir sa mission.
+            </p>
           </div>
           <figure className="spiritual-card-visual">
             <img src="/images/activites-eglise/rassemblement-et-priere.jpg" alt="Assemblée réunie pour un temps de prière et d’adoration" />
@@ -106,7 +123,7 @@ export default function Story() {
         <div className="prayer-block">
           <div className="prayer-heading">
             <p className="eyebrow">Bâtir dans la prière</p>
-            <h2 className="prayer-title">Prions <span className="gold-text">ensembles.</span></h2>
+            <h2 className="prayer-title">Prions <span className="gold-text">ensemble.</span></h2>
             <p className="prayer-copy">
               À l’image de Néhémie, nous ne voulons pas seulement bâtir avec nos forces : nous voulons prier, discerner et agir.
               La prière accompagne chaque étape du projet, depuis la recherche du lieu jusqu’à son aménagement et son ouverture.
@@ -151,6 +168,10 @@ export default function Story() {
             <figure>
               <img src="/images/projection future salle souhaité/WhatsApp Image 2026-08-13 at 11.03.41 (1).jpeg" alt="Projection d’un espace de convivialité et de restauration" />
               <figcaption>La convivialité et le service</figcaption>
+            </figure>
+            <figure>
+              <img src="/images/projections/salle-enfants.jpg" alt="Projection d’une salle accueillante dédiée aux enfants" />
+              <figcaption>La salle des enfants</figcaption>
             </figure>
           </div>
           <p className="projection-legal">Projections d’intention — visuels non contractuels.</p>
