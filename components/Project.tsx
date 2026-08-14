@@ -1,27 +1,5 @@
 import { Crown, HandHeart, UsersRound } from "lucide-react";
-
-const visionCentres = [
-  {
-    image: "/images/BATIMENT.png",
-    title: "Un centre de refuge et de communion",
-    copy: "Un lieu où l’amour, l’acceptation, le réconfort et l’espérance restaurent les personnes, et où chacun peut trouver une véritable famille."
-  },
-  {
-    image: "/images/WORSHIP.png",
-    title: "Un centre d’adoration et de puissance spirituelle",
-    copy: "Un lieu où la puissance de la Parole transforme chaque personne en véritable adorateur, intensifie la foi et restaure les cœurs."
-  },
-  {
-    image: "/images/SALLE.png",
-    title: "Un centre de transformation et d’édification",
-    copy: "Un lieu où l’enseignement, les conférences, les séminaires et les ateliers permettent de grandir, de repousser ses limites et de développer son leadership."
-  },
-  {
-    image: "/images/PHOTO-2026-08-09-06-40-43.jpg",
-    title: "Un centre de formation, d’excellence et d’impact",
-    copy: "Un lieu qui équipe chacun pour servir efficacement, cultive l’excellence et déploie la Parole afin d’influencer positivement notre environnement."
-  }
-];
+import VisionCarousel from "./VisionCarousel";
 
 export default function Project() {
   return (
@@ -30,7 +8,7 @@ export default function Project() {
         <div className="project-overview">
           <div className="project-overview-copy">
             <p className="eyebrow">Le projet d’implantation</p>
-            <h2>Bien plus qu’un local.<br/><span className="gold-text">Un lieu de vie.</span></h2>
+            <h2>Bien plus qu’un local :<br/><span className="gold-text">un lieu de vie.</span></h2>
             <p className="project-lead">
               Ce projet ne consiste pas simplement à louer un local. Il s’agit de permettre à ICC Fontainebleau
               de s’implanter durablement dans un lieu adapté, afin d’être enfin fixée et de ne plus dépendre de salles temporaires.
@@ -41,21 +19,17 @@ export default function Project() {
             </p>
           </div>
 
-          <div className="project-overview-visual" aria-label="Projection du futur lieu d’ICC Fontainebleau">
+          <div className="project-overview-visual" aria-label="Illustrations des activités d’ICC Fontainebleau">
             <figure className="project-visual-main">
               <img src="/images/BATIMENT.png" alt="Projection du futur bâtiment d’ICC Fontainebleau" />
-              <figcaption>Un lieu identifiable</figcaption>
+              <figcaption>S’implanter durablement</figcaption>
             </figure>
             <figure className="project-visual-inset">
-              <img src="/images/SALLE.png" alt="Projection de la future salle d’ICC Fontainebleau" />
-              <figcaption>Un espace polyvalent</figcaption>
+              <img src="/images/projet/joie-eglise.jpg" alt="Une participante rayonnante de joie au cœur d’un rassemblement d’Église" />
+              <figcaption>Vivre la joie ensemble</figcaption>
             </figure>
+            <p className="projection-disclaimer">Visuels d’illustration — images non contractuelles.</p>
           </div>
-        </div>
-
-        <div className="project-manifesto">
-          <span>Le lieu est un outil. La mission est le but.</span>
-          <strong>Nous ne cherchons pas simplement à louer des murs. Nous préparons un lieu pour accueillir, équiper, servir et transmettre.</strong>
         </div>
 
         <blockquote className="scripture-panel scripture-panel-project">
@@ -80,19 +54,7 @@ export default function Project() {
             </div>
           </div>
 
-          <div className="vision-centres">
-            {visionCentres.map(({ image, title, copy }, index) => (
-              <article className="vision-centre-card" key={title}>
-                <img src={image} alt="" />
-                <div className="vision-centre-overlay" />
-                <div className="vision-centre-copy">
-                  <span>0{index + 1}</span>
-                  <h3>{title}</h3>
-                  <p>{copy}</p>
-                </div>
-              </article>
-            ))}
-          </div>
+          <VisionCarousel />
 
           <div className="availability-banner">
             <strong>7 jours sur 7</strong>

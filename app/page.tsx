@@ -4,7 +4,6 @@ import Story from "@/components/Story";
 import VideoSection from "@/components/VideoSection";
 import Project from "@/components/Project";
 import Mission from "@/components/Mission";
-import Gallery from "@/components/Gallery";
 import Donation from "@/components/Donation";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
@@ -21,7 +20,6 @@ export default function Home() {
       <Project />
       <Story />
       <Mission />
-      <Gallery />
       <Donation />
       <FAQ />
       <FinalCTA />

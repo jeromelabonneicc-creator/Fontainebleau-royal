@@ -27,3 +27,4 @@ next-env.d.ts
 
 # Original source videos (web versions are committed separately)
 *.MOV
+/public/images/Paroles prophétiques/*.mp4

@@ -88,14 +88,14 @@ export default function Hero() {
           <div className="hero-kicker">
             <span />
             <b>♛</b>
-            <strong>Fontainebleau Royal — Appel aux dons</strong>
+            <strong>Appel aux dons</strong>
             <span />
           </div>
 
           <h1 className="hero-title hero-title-campaign">
+            <span className="hero-title-main">Fontainebleau <span className="gold-text">Royal</span></span>
             <span className="hero-title-lead">Ensemble, mobilisons-nous !</span>
-            <span className="hero-title-main gold-text">Préparons un lieu de vie</span>
-            <span className="hero-title-place">à la gloire de Dieu au pays de Fontainebleau.</span>
+            <span className="hero-title-place">Préparons un lieu de vie à la gloire de Dieu au pays de Fontainebleau.</span>
           </h1>
 
           <p className="hero-copy">

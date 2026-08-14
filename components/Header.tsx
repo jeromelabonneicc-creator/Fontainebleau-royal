@@ -7,7 +7,6 @@ const links = [
   ["Le projet", "#projet"],
   ["La vision", "#vision"],
   ["Histoire", "#histoire"],
-  ["Galerie", "#galerie"],
   ["Contribuer", "#contribuer"],
 ];
 
