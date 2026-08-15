@@ -13,7 +13,9 @@ const links = [
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [mobileCtaVisible, setMobileCtaVisible] = useState(false);
+  const [pastHeroActions, setPastHeroActions] = useState(false);
+  const [donationSectionVisible, setDonationSectionVisible] = useState(false);
+  const mobileCtaVisible = pastHeroActions && !donationSectionVisible;
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 20);
@@ -39,22 +41,36 @@ export default function Header() {
       mediaContext = gsap.matchMedia();
       mediaContext.add("(max-width: 720px)", () => {
         const heroActions = document.querySelector<HTMLElement>(".hero-actions");
-        if (!heroActions) return;
+        const donationSection = document.querySelector<HTMLElement>("#contribuer");
+        if (!heroActions || !donationSection) return;
 
-        const trigger = ScrollTrigger.create({
+        const heroTrigger = ScrollTrigger.create({
           trigger: heroActions,
           start: "bottom top",
           onEnter: () => {
             setOpen(false);
-            setMobileCtaVisible(true);
+            setPastHeroActions(true);
           },
-          onLeaveBack: () => setMobileCtaVisible(false)
+          onLeaveBack: () => setPastHeroActions(false)
+        });
+
+        const donationTrigger = ScrollTrigger.create({
+          trigger: donationSection,
+          start: "top bottom",
+          end: "bottom top",
+          onToggle: ({ isActive }) => setDonationSectionVisible(isActive)
         });
 
         ScrollTrigger.refresh();
-        setMobileCtaVisible(window.scrollY >= trigger.start);
+        setPastHeroActions(window.scrollY >= heroTrigger.start);
+        setDonationSectionVisible(donationTrigger.isActive);
 
-        return () => trigger.kill();
+        return () => {
+          heroTrigger.kill();
+          donationTrigger.kill();
+          setPastHeroActions(false);
+          setDonationSectionVisible(false);
+        };
       });
     })();
 
@@ -66,7 +82,7 @@ export default function Header() {
 
   return (
     <>
-      <header className={`header ${scrolled ? "header--scrolled" : ""} ${mobileCtaVisible ? "header--mobile-hidden" : ""}`}>
+      <header className={`header ${scrolled ? "header--scrolled" : ""} ${pastHeroActions ? "header--mobile-hidden" : ""}`}>
         <a className="brand" href="#accueil" aria-label="ICC Fontainebleau">
           <div className="brand-mark"><img src="/images/logos/icc-fontainebleau.png" alt="" /></div>
           <span>Fontainebleau</span>
