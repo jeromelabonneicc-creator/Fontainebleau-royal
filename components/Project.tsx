@@ -38,6 +38,33 @@ export default function Project() {
           <cite>Exode 25:8</cite>
         </blockquote>
 
+        <div className="projection-showcase">
+          <div className="projection-heading">
+            <p className="eyebrow">Se projeter dans le futur lieu</p>
+            <h2>Des espaces<br/><span className="gold-text">pour la vie de l’Église.</span></h2>
+            <p>Ces images traduisent l’ambition d’aménagement et les usages souhaités. Elles constituent des projections d’intention et ne représentent pas contractuellement le futur lieu.</p>
+          </div>
+          <div className="projection-grid">
+            <figure>
+              <img src="/images/projection future salle souhaité/WhatsApp Image 2026-08-13 at 11.03.40.jpeg" alt="Projection d’une salle annexe pour les rassemblements" />
+              <figcaption>La salle annexe</figcaption>
+            </figure>
+            <figure>
+              <img src="/images/projection future salle souhaité/WhatsApp Image 2026-08-13 at 11.03.41.jpeg" alt="Projection d’une salle polyvalente pour les groupes et formations" />
+              <figcaption>Les groupes et les formations</figcaption>
+            </figure>
+            <figure>
+              <img src="/images/projection future salle souhaité/WhatsApp Image 2026-08-13 at 11.03.41 (1).jpeg" alt="Projection d’un espace de convivialité et de restauration" />
+              <figcaption>La convivialité et le service</figcaption>
+            </figure>
+            <figure>
+              <img src="/images/projections/salle-enfants.jpg" alt="Projection d’une salle accueillante dédiée aux enfants" />
+              <figcaption>La salle des enfants</figcaption>
+            </figure>
+          </div>
+          <p className="projection-legal">Projections d’intention — visuels non contractuels.</p>
+        </div>
+
         <div id="vision" className="vision-section">
           <div className="vision-heading">
             <div>
@@ -71,7 +98,7 @@ export default function Project() {
               <div className="pillar-copy">
                 <strong>Un même projet porté par toute l’Église.</strong>
                 <p>Le peuple que Dieu s’est acquis sur le territoire se mobilise autour d’une même vision : comprendre l’enjeu, prier et contribuer selon ses possibilités.</p>
-                <p>Et au-delà d’ICC Fontainebleau, toute personne qui a à cœur de soutenir cette implantation peut également prendre part dans cette histoire.</p>
+                <p>Et au-delà d’ICC Fontainebleau, toute personne qui a à cœur de soutenir cette implantation peut également prendre part à cette histoire.</p>
               </div>
             </article>
             <article className="temple-column-card">

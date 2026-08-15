@@ -86,10 +86,11 @@ export default function Story() {
           <div className="spiritual-card-copy">
             <div className="gold-icon"><Church /></div>
             <p className="eyebrow">La portée spirituelle du projet</p>
-            <h3>Un lieu consacré à Dieu.</h3>
+            <h3>Un lieu consacré à Dieu <span className="spiritual-title-emphasis">: un autel royal&nbsp;!</span></h3>
             <p>
-              Au-delà d’un lieu de rassemblement, nous voulons établir à Fontainebleau un espace mis à part pour Dieu,
-              où Son nom sera invoqué, Sa présence recherchée, Sa Parole annoncée et des vies transformées.
+              Au-delà d’un lieu de rassemblement, d’adoration, de formation, de refuge, de soutien… nous voulons établir
+              à Fontainebleau un espace mis à part pour Dieu, où Son nom sera invoqué, Sa présence recherchée,
+              Sa Parole annoncée et des vies transformées.
             </p>
             <p>
               Dans la Bible, l’autel marque la consécration d’un lieu à Dieu. Lorsqu’Abraham arriva sur le territoire
@@ -102,7 +103,7 @@ export default function Story() {
             </p>
           </div>
           <figure className="spiritual-card-visual">
-            <img src="/images/activites-eglise/rassemblement-et-priere.jpg" alt="Assemblée réunie pour un temps de prière et d’adoration" />
+            <img src="/images/WORSHIP.png" alt="Projection d’une salle dédiée à l’adoration et aux rassemblements" />
             <figcaption>Visuel d’illustration</figcaption>
           </figure>
         </article>
@@ -137,32 +138,6 @@ export default function Story() {
           </div>
         </div>
 
-        <div className="projection-showcase">
-          <div className="projection-heading">
-            <p className="eyebrow">Se projeter dans le futur lieu</p>
-            <h2>Des espaces<br/><span className="gold-text">pour la vie de l’Église.</span></h2>
-            <p>Ces images traduisent l’ambition d’aménagement et les usages souhaités. Elles constituent des projections d’intention et ne représentent pas contractuellement le futur lieu.</p>
-          </div>
-          <div className="projection-grid">
-            <figure>
-              <img src="/images/projection future salle souhaité/WhatsApp Image 2026-08-13 at 11.03.40.jpeg" alt="Projection d’une salle principale pour les rassemblements" />
-              <figcaption>La salle principale</figcaption>
-            </figure>
-            <figure>
-              <img src="/images/projection future salle souhaité/WhatsApp Image 2026-08-13 at 11.03.41.jpeg" alt="Projection d’une salle polyvalente pour les groupes et formations" />
-              <figcaption>Les groupes et les formations</figcaption>
-            </figure>
-            <figure>
-              <img src="/images/projection future salle souhaité/WhatsApp Image 2026-08-13 at 11.03.41 (1).jpeg" alt="Projection d’un espace de convivialité et de restauration" />
-              <figcaption>La convivialité et le service</figcaption>
-            </figure>
-            <figure>
-              <img src="/images/projections/salle-enfants.jpg" alt="Projection d’une salle accueillante dédiée aux enfants" />
-              <figcaption>La salle des enfants</figcaption>
-            </figure>
-          </div>
-          <p className="projection-legal">Projections d’intention — visuels non contractuels.</p>
-        </div>
       </div>
     </section>
   );

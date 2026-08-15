@@ -24,7 +24,7 @@ export default function Mission() {
             <div>
               <div className="sef-logo"><img src="/images/logos/sef.png" alt="Le Secours Évangélique de France" /></div>
               <p className="eyebrow">Le Secours Évangélique de France</p>
-              <h2>Le bras tendu de<br/><span className="gold-text">l’action évangélique en France.</span></h2>
+              <h2>Le bras tendu de<br/><span className="gold-text">l’action évangélique à Fontainebleau.</span></h2>
             </div>
             <p>
               Le SEF agit déjà auprès des personnes en difficulté au travers d’actions solidaires concrètes.
