@@ -33,7 +33,7 @@ export const propheticVoices = [
     video: "/videos/prophecies/pasteur-sita.mp4",
     poster: "/videos/prophecies/pasteur-sita-poster.jpg",
     objectPosition: "32% center",
-    quote: "La grossesse pour la salle a été envoyé Et elle va aller à son terme"
+    quote: "La grossesse pour la salle a été envoyé et elle va aller à son terme"
   }
 ];
 
