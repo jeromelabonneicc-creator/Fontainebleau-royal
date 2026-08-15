@@ -70,8 +70,16 @@ export default function Project() {
           </div>
           <div className="projection-grid">
             <figure>
+              <img src="/images/SALLE.png" alt="Projection de la salle principale vide" />
+              <figcaption>La salle principale</figcaption>
+            </figure>
+            <figure>
               <img src="/images/projection future salle souhaité/WhatsApp Image 2026-08-13 at 11.03.40.jpeg" alt="Projection d’une salle annexe pour les rassemblements" />
               <figcaption>La salle annexe</figcaption>
+            </figure>
+            <figure>
+              <img src="/images/projections/salle-reunion.png" alt="Projection d’une salle de réunion" />
+              <figcaption>La salle de réunion</figcaption>
             </figure>
             <figure>
               <img src="/images/projection future salle souhaité/WhatsApp Image 2026-08-13 at 11.03.41.jpeg" alt="Projection d’une salle polyvalente pour les groupes et formations" />
@@ -85,8 +93,11 @@ export default function Project() {
               <img src="/images/projections/salle-enfants.jpg" alt="Projection d’une salle accueillante dédiée aux enfants" />
               <figcaption>La salle des enfants</figcaption>
             </figure>
+            <figure>
+              <img src="/images/projections/Point repos cuisine pour les STAR.png" alt="Projection d’un point repos et cuisine pour les STAR" />
+              <figcaption>Point repos cuisine pour les STAR</figcaption>
+            </figure>
           </div>
-          <p className="projection-legal">Projections d’intention — visuels non contractuels.</p>
         </div>
 
         <div id="vision" className="vision-section">
