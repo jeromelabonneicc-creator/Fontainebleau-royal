@@ -40,6 +40,7 @@ h2{font-size:clamp(42px,6vw,82px);line-height:.98;margin:18px 0 28px;letter-spac
 .desktop-nav a:hover{color:var(--gold)}
 .menu-btn{display:none;background:none;border:0;color:white}
 .mobile-nav{display:none}
+.mobile-sticky-donate{display:none}
 .hero{min-height:100vh;display:flex;align-items:center;padding-top:130px;background:
 radial-gradient(circle at 74% 35%,rgba(22,65,110,.24),transparent 30%),
 linear-gradient(180deg,#03162f,#020d1d)}
@@ -217,7 +218,8 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
 @media(max-width:720px){
   .section{padding:82px 0}
   .container{width:min(calc(100% - 28px),var(--max))}
-  .header{height:74px;padding:0 18px}
+  .header{height:74px;padding:0 18px;will-change:transform,opacity;transition:transform .45s cubic-bezier(.22,1,.36,1),opacity .3s ease,background .25s,height .25s}
+  .header--mobile-hidden{transform:translateY(-110%);opacity:0;pointer-events:none}
   .brand{min-width:0}
   .brand span{display:none}
   .hero-title{font-size:clamp(72px,24vw,110px)}
@@ -252,6 +254,8 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
   .gallery-card-2{height:300px;transform:none}
   .amounts{grid-template-columns:repeat(2,1fr)}
   .footer-inner{align-items:flex-start;gap:20px;flex-direction:column}
+  .mobile-sticky-donate{position:fixed;z-index:120;right:14px;bottom:max(14px,env(safe-area-inset-bottom));left:14px;display:flex;width:min(calc(100% - 28px),360px);min-height:52px;margin:auto;align-items:center;justify-content:center;gap:12px;border:1px solid rgba(255,255,255,.22);border-radius:999px;background:linear-gradient(180deg,#ffd45e,#e6a900);color:#071529;box-shadow:0 18px 48px rgba(0,0,0,.42),0 0 30px rgba(243,181,26,.16);font-size:13px;font-weight:900;letter-spacing:.07em;text-transform:uppercase;opacity:0;transform:translateY(calc(100% + 34px));pointer-events:none;transition:transform .45s cubic-bezier(.22,1,.36,1),opacity .3s ease}
+  .mobile-sticky-donate--visible{opacity:1;transform:translateY(0);pointer-events:auto}
 }
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
