@@ -260,8 +260,8 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
 .hero-title-campaign .hero-title-main{font-size:1em;line-height:.86;text-transform:uppercase}
 .hero-title-campaign .hero-title-main .gold-text{display:inline}
 .hero-title-campaign .hero-title-lead{margin-top:21px;color:var(--white);font-size:.32em;line-height:1.08;letter-spacing:-.015em;text-transform:uppercase}
-.hero-title-campaign .hero-title-place{max-width:690px;margin-top:9px;color:#d5dce6;font-size:.27em;line-height:1.25;letter-spacing:0;text-transform:uppercase}
 .hero-copy-wrap{min-width:0}
+.hero-scripture strong{color:#fff;font-style:normal;font-weight:900;letter-spacing:.035em}
 .hero-scripture{max-width:610px;margin:25px 0 0;padding:5px 0 5px 20px;border-left:2px solid rgba(243,181,26,.72)}
 .hero-scripture p{margin:0;color:#cdd5e1;font-size:15px;line-height:1.6;font-style:italic}
 .hero-scripture cite{display:block;margin-top:8px;color:var(--gold);font-size:11px;font-style:normal;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
@@ -292,38 +292,14 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
 .vision-section{margin-top:126px;scroll-margin-top:90px}
 .vision-heading{display:grid;grid-template-columns:1fr .72fr;gap:80px;align-items:end}
 .vision-heading-copy p{margin:0;color:#c4ccda;font-size:17px;line-height:1.72}
-.vision-heading-copy p+p{margin-top:20px;color:#eef1f6}
-.vision-carousel-shell{position:relative;width:100vw;margin:58px calc(50% - 50vw) 0;overflow:hidden;user-select:none}
-.vision-carousel-stage{position:relative;height:clamp(520px,45vw,680px);overflow:hidden;isolation:isolate;touch-action:pan-y;outline:none}
-.vision-carousel-stage:focus-visible{outline:1px solid rgba(255,212,94,.8);outline-offset:-4px}
-.vision-carousel-stage::after{content:"";position:absolute;z-index:14;left:50%;bottom:19px;width:min(520px,38vw);height:2px;translate:-50% 0;background:radial-gradient(ellipse,var(--gold) 0,rgba(243,181,26,.45) 38%,transparent 72%);filter:blur(.4px);pointer-events:none}
-.vision-carousel-slide{position:absolute;left:50%;top:18px;width:min(48vw,780px);height:calc(100% - 58px);translate:-50% 0;overflow:hidden;opacity:0;border:1px solid rgba(243,181,26,.26);border-radius:34px;background:#04142a;box-shadow:0 28px 80px rgba(0,0,0,.42);will-change:transform,opacity,filter}
-.vision-carousel-slide.is-active{opacity:1;border-color:rgba(255,196,56,.62);box-shadow:0 38px 100px rgba(0,0,0,.52),0 0 42px rgba(243,181,26,.08)}
-.vision-carousel-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;will-change:transform}
-.vision-carousel-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,13,29,.06) 10%,rgba(2,13,29,.42) 45%,rgba(2,13,29,.98) 100%),linear-gradient(90deg,rgba(2,13,29,.28),transparent 65%)}
-.vision-carousel-copy{position:absolute;z-index:2;right:clamp(26px,3.4vw,56px);bottom:clamp(30px,3.2vw,50px);left:clamp(26px,3.4vw,56px);will-change:transform,opacity}
-.vision-carousel-copy>span{display:block;color:var(--gold-2);font-size:15px;font-weight:900;letter-spacing:.14em;text-shadow:0 2px 14px rgba(0,0,0,.7)}
-.vision-carousel-copy h3{max-width:690px;margin:18px 0 15px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(31px,3vw,48px);line-height:1.02;letter-spacing:-.035em;text-wrap:balance;text-shadow:0 3px 22px rgba(0,0,0,.85)}
-.vision-carousel-copy i{display:block;width:66px;height:2px;margin:0 0 20px;background:linear-gradient(90deg,var(--gold),rgba(243,181,26,.15))}
-.vision-carousel-copy p{max-width:650px;margin:0;color:#d9dfe7;font-size:clamp(14px,1.15vw,18px);line-height:1.65;text-shadow:0 2px 14px rgba(0,0,0,.8)}
-.vision-carousel-arrow{position:absolute;z-index:20;top:50%;width:64px;height:64px;display:grid;place-items:center;translate:0 -50%;border:1px solid rgba(243,181,26,.48);border-radius:50%;color:var(--gold-2);background:rgba(3,18,39,.72);backdrop-filter:blur(14px);cursor:pointer;transition:border-color .3s,background .3s,opacity .3s,transform .3s}
-.vision-carousel-arrow:hover:not(:disabled){border-color:var(--gold-2);background:rgba(13,42,75,.9);transform:scale(1.06)}
-.vision-carousel-arrow:focus-visible{outline:2px solid var(--gold-2);outline-offset:3px}
-.vision-carousel-arrow:disabled{opacity:.24;cursor:not-allowed}
-.vision-carousel-arrow svg{width:30px;height:30px;stroke-width:1.45}
-.vision-carousel-arrow-prev{left:clamp(18px,3vw,56px)}
-.vision-carousel-arrow-next{right:clamp(18px,3vw,56px)}
-.vision-carousel-dots{height:38px;display:flex;align-items:center;justify-content:center;gap:18px}
-.vision-carousel-dots button{width:10px;height:10px;padding:0;border:0;border-radius:999px;background:rgba(255,255,255,.36);box-shadow:0 0 0 7px transparent;cursor:pointer;transition:width .45s cubic-bezier(.22,1,.36,1),background .3s,box-shadow .3s}
-.vision-carousel-dots button:hover{background:rgba(255,212,94,.72)}
-.vision-carousel-dots button:focus-visible{outline:2px solid var(--gold-2);outline-offset:5px}
-.vision-carousel-dots button.is-active{width:42px;background:linear-gradient(90deg,#d99500,var(--gold-2));box-shadow:0 0 18px rgba(243,181,26,.25)}
+.vision-heading-copy .vision-statement{margin-top:20px;color:#eef1f6;font-size:clamp(20px,2vw,28px);font-weight:750;line-height:1.48}
+.vision-pillars-intro{max-width:950px;margin:56px 0 0;color:#eef1f6;font-size:clamp(20px,2vw,28px);font-weight:750;line-height:1.48}
 .availability-banner{display:grid;grid-template-columns:auto 1fr;gap:38px;align-items:center;margin-top:20px;padding:30px 34px;border:1px solid rgba(243,181,26,.48);border-radius:18px;background:linear-gradient(90deg,rgba(243,181,26,.13),rgba(255,255,255,.025))}
 .availability-banner strong{color:var(--gold-2);font-size:clamp(28px,3vw,44px);white-space:nowrap}
 .availability-banner p{margin:0;color:#d5dce6;font-size:17px;line-height:1.6}
-.pillar-heading{margin-top:110px;max-width:1050px}
-.section-explainer{max-width:800px;margin:6px 0 0;color:#bac4d2;font-size:18px;line-height:1.72}
-.royal-pillars{position:relative;margin-top:62px;padding:0 5.5% 56px}
+.video-availability{margin:0 0 48px}
+.video-availability p b{color:#fff;font-weight:850}
+.royal-pillars{position:relative;margin-top:46px;padding:0 5.5% 56px}
 .temple-roof{position:relative;height:145px;margin:0 -3.5%;filter:drop-shadow(0 18px 32px rgba(0,0,0,.24))}
 .temple-roof::before,.temple-roof::after{content:"";position:absolute;clip-path:polygon(50% 0,100% 72%,100% 100%,0 100%,0 72%)}
 .temple-roof::before{inset:0;background:linear-gradient(90deg,rgba(243,181,26,.22),rgba(255,212,94,.7),rgba(243,181,26,.22))}
@@ -347,7 +323,6 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
 .royal-pillars .pillar-copy strong{display:block;color:#f3f5f8;font-size:18px;line-height:1.45}
 .royal-pillars .pillar-copy p{margin-top:14px;font-size:inherit;line-height:inherit}
 .temple-foundation{height:34px;margin-top:23px;border-top:1px solid rgba(243,181,26,.48);border-bottom:1px solid rgba(243,181,26,.25);background:linear-gradient(180deg,#0c2443,#06172e);box-shadow:0 14px 0 -4px #091d37,0 14px 0 -3px rgba(243,181,26,.25),0 28px 0 -8px #07172d,0 28px 0 -7px rgba(243,181,26,.35),0 31px 36px rgba(0,0,0,.4)}
-.mobile-temple-crown{display:none}
 .gold-icon{width:58px;height:58px;display:grid;place-items:center;border:1px solid rgba(243,181,26,.5);border-radius:50%;color:var(--gold);background:rgba(243,181,26,.08);box-shadow:inset 0 0 24px rgba(243,181,26,.05)}
 .gold-icon svg{width:27px;height:27px;stroke-width:1.7}
 .mission-heading{margin-top:112px}
@@ -383,7 +358,9 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
 
 .story-grid{align-items:center}
 .story-scripture{margin:0}
-.story-scripture p{font-size:clamp(18px,1.65vw,24px);line-height:1.55}
+.story-prophecy-title{text-wrap:balance}
+.story-scripture p{font-size:clamp(18px,1.65vw,24px);line-height:1.55;font-weight:400}
+.story-scripture strong{color:#fff;font-weight:850}
 .prophecy-lead{max-width:800px;margin:52px 0 0;color:#d4dbe5;font-size:19px;line-height:1.7}
 .prophecy-video-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:38px}
 .prophecy-video-card{position:relative;overflow:hidden;aspect-ratio:2/3;border:1px solid rgba(243,181,26,.35);border-radius:21px;background:linear-gradient(165deg,#0c2749,#05152b);box-shadow:0 22px 55px rgba(0,0,0,.25)}
@@ -414,11 +391,7 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
 .challenge-illustration img{width:100%;height:100%;object-fit:cover}
 .challenge-illustration figcaption{position:absolute;z-index:2;left:20px;bottom:18px;color:var(--gold-2);font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
 .major-challenge-card ul{grid-template-columns:repeat(2,1fr);gap:0 34px}
-.challenge-signature{display:block;max-width:920px;margin-top:26px;padding-top:22px;border-top:1px solid rgba(243,181,26,.3);color:var(--gold-2);font-size:18px;line-height:1.5}
-.challenge-biblical-support{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:30px}
-.challenge-biblical-support blockquote{margin:0;padding:24px;border:1px solid rgba(243,181,26,.23);border-radius:15px;background:rgba(255,255,255,.025)}
-.challenge-biblical-support p{margin:0;color:#d9dfe7;font-size:16px;line-height:1.55}
-.challenge-biblical-support cite,.spiritual-verse cite{display:block;margin-top:14px;color:var(--gold);font-size:10px;font-style:normal;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.spiritual-verse cite{display:block;margin-top:14px;color:var(--gold);font-size:10px;font-style:normal;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
 .spiritual-card{display:grid;grid-template-columns:1fr .75fr;gap:52px;align-items:stretch;margin-top:28px;background:linear-gradient(145deg,#0b2548,#06172f)}
 .spiritual-card-copy>p:not(.eyebrow){color:#bdc7d5;font-size:17px;line-height:1.65}
 .spiritual-card-copy>p:not(.eyebrow)+p{margin-top:18px}
@@ -465,7 +438,7 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
 @media(max-width:820px){
   .royal-pillars{display:block;margin-top:44px;padding:0 4px 8px;overflow:visible}
   .temple-roof,.temple-beam,.temple-foundation{display:none}
-  .temple-columns{display:grid;grid-template-columns:1fr;gap:0;padding:0}
+  .temple-columns{display:grid;grid-template-columns:1fr;gap:18px;padding:0}
   .temple-column-card{min-height:390px;padding:48px 34px 42px;border:1px solid rgba(243,181,26,.46);border-radius:28px;background:radial-gradient(circle at 50% 14%,rgba(24,62,103,.38),transparent 36%),linear-gradient(145deg,#0b2341,#06172e);box-shadow:inset 0 0 42px rgba(3,12,27,.5),0 22px 42px rgba(0,0,0,.2);overflow:hidden}
   .temple-column-card::before,.temple-column-card::after{display:none}
   .pillar-number{position:absolute;left:0;top:0;width:74px;height:58px;display:grid;place-items:center;border-radius:0 0 18px 0;color:#07172c;background:linear-gradient(145deg,#ffd45e,#e4a600);font-size:20px;font-weight:900;letter-spacing:.08em;box-shadow:0 8px 24px rgba(243,181,26,.15)}
@@ -473,12 +446,6 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
   .temple-column-card .gold-icon svg{width:48px;height:48px}
   .royal-pillars h3{margin:28px 0 12px;font-size:36px}
   .royal-pillars p{max-width:520px;font-size:18px;line-height:1.7}
-  .mobile-temple-crown{position:relative;z-index:3;width:72px;height:72px;margin:-36px auto;display:grid;place-items:center;border:1px solid rgba(243,181,26,.62);border-radius:50%;color:var(--gold-2);background:#091d38;box-shadow:0 0 0 8px #07172c,0 0 30px rgba(243,181,26,.12)}
-  .mobile-temple-crown::before,.mobile-temple-crown::after{content:"";position:absolute;z-index:-1;left:50%;width:1px;height:38px;background:rgba(243,181,26,.48)}
-  .mobile-temple-crown::before{bottom:100%}
-  .mobile-temple-crown::after{top:100%}
-  .mobile-temple-crown svg{width:34px;height:34px;stroke-width:1.5}
-  .temple-column-card+.mobile-temple-crown+.temple-column-card{padding-top:58px}
 }
 
 @media(max-width:720px){
@@ -488,7 +455,6 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
   .hero-title-royal span:first-child{letter-spacing:-.07em}
   .hero-title-campaign{font-size:clamp(36px,11.6vw,58px);margin:28px 0 24px;line-height:.88}
   .hero-title-campaign .hero-title-lead{margin-top:18px;font-size:.31em;line-height:1.1}
-  .hero-title-campaign .hero-title-place{margin-top:8px;font-size:.24em;line-height:1.28}
   .hero-kicker strong{max-width:220px;line-height:1.35}
   .hero-copy{font-size:17px;line-height:1.5}
   .hero-scripture{opacity:0;transform:translateY(34px);margin-top:21px;padding-left:15px}
@@ -510,26 +476,12 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
   .project-manifesto{grid-template-columns:1fr;gap:16px;margin-top:60px}
   .vision-section{margin-top:82px}
   .vision-heading{gap:18px}
-  .vision-carousel-shell{margin-top:38px}
-  .vision-carousel-stage{height:clamp(500px,145vw,590px)}
-  .vision-carousel-stage::after{bottom:12px;width:62vw}
-  .vision-carousel-slide{top:12px;width:calc(100vw - 42px);height:calc(100% - 42px);border-radius:25px}
-  .vision-carousel-copy{right:25px;bottom:28px;left:25px}
-  .vision-carousel-copy>span{font-size:12px}
-  .vision-carousel-copy h3{margin:13px 0 12px;font-size:clamp(27px,8vw,38px);line-height:1.05}
-  .vision-carousel-copy i{width:52px;margin-bottom:15px}
-  .vision-carousel-copy p{font-size:14px;line-height:1.55}
-  .vision-carousel-arrow{width:46px;height:46px}
-  .vision-carousel-arrow svg{width:23px;height:23px}
-  .vision-carousel-arrow-prev{left:8px}
-  .vision-carousel-arrow-next{right:8px}
-  .vision-carousel-dots{height:32px;gap:14px}
-  .vision-carousel-dots button.is-active{width:34px}
+  .vision-pillars-intro{margin-top:38px}
   .availability-banner{grid-template-columns:1fr;gap:10px;padding:25px 23px}
   .availability-banner strong{font-size:32px}
   .availability-banner p{font-size:15px}
-  .pillar-heading,.mission-heading{margin-top:74px}
-  .section-explainer{font-size:16px;line-height:1.68}
+  .video-availability{margin-bottom:32px}
+  .mission-heading{margin-top:74px}
   .royal-pillars{margin-top:34px}
   .temple-column-card{min-height:370px;padding:44px 25px 38px;border-radius:24px}
   .temple-column-card .gold-icon{width:100px;height:100px}
@@ -562,7 +514,6 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
   .major-challenge-card ul{grid-template-columns:1fr}
   .campaign-stage-heading{margin-bottom:34px}
   .campaign-stage-heading{margin-top:82px}
-  .challenge-biblical-support{grid-template-columns:1fr}
   .spiritual-card{margin-top:18px}
   .spiritual-card-visual{min-height:290px}
   .prayer-block{margin-top:18px;padding:32px 24px}

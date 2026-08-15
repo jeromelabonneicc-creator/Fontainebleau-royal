@@ -1,5 +1,4 @@
 import { Crown, HandHeart, UsersRound } from "lucide-react";
-import VisionCarousel from "./VisionCarousel";
 
 export default function Project() {
   return (
@@ -10,12 +9,14 @@ export default function Project() {
             <p className="eyebrow">Le projet d’implantation</p>
             <h2>Bien plus qu’un local :<br/><span className="gold-text">un lieu de vie.</span></h2>
             <p className="project-lead">
-              Ce projet ne consiste pas simplement à louer un local. Il s’agit de permettre à ICC Fontainebleau
-              de s’implanter durablement dans un lieu adapté, afin d’être enfin fixée et de ne plus dépendre de salles temporaires.
+              Ce projet a pour ambition de permettre à <strong>ICC Fontainebleau de s’implanter durablement dans un lieu adapté à sa vision et à son développement</strong>.
             </p>
             <p>
-              <strong>Fontainebleau Royal</strong> est le nom donné à ce futur lieu de vie polyvalent — un espace « multiplex » —
-              dans lequel ICC Fontainebleau pourra rassembler ses activités, accueillir chaque public, former, servir et transmettre.
+              <strong>Fontainebleau Royal</strong> sera un espace polyvalent, pensé pour rassembler les différentes activités de l’Église,
+              accueillir tous les publics, former, accompagner, servir et transmettre.
+            </p>
+            <p>
+              Plus qu’un simple lieu de rassemblement, il a vocation à devenir <strong>un véritable lieu de vie, de croissance et d’impact pour le territoire</strong>.
             </p>
           </div>
 
@@ -25,7 +26,7 @@ export default function Project() {
               <figcaption>S’implanter durablement</figcaption>
             </figure>
             <figure className="project-visual-inset">
-              <img src="/images/projet/joie-eglise.jpg" alt="Une participante rayonnante de joie au cœur d’un rassemblement d’Église" />
+              <img src="/images/projet/joie-eglise.jpg" alt="Une assemblée chrétienne multiculturelle réunie dans la joie" />
               <figcaption>Vivre la joie ensemble</figcaption>
             </figure>
             <p className="projection-disclaimer">Visuels d’illustration — images non contractuelles.</p>
@@ -41,34 +42,19 @@ export default function Project() {
           <div className="vision-heading">
             <div>
               <p className="eyebrow">La vision</p>
-              <h2>Voir au-delà de<br/><span className="gold-text">la situation actuelle.</span></h2>
+              <h2>Implanter un lieu qui <span className="gold-text">transforme des vies</span> et impacte le territoire.</h2>
             </div>
             <div className="vision-heading-copy">
               <p>
-                ICC Fontainebleau prépare un lieu stable, identifiable, adapté à la croissance et capable de soutenir durablement la mission au pays de Fontainebleau.
+                Ce lieu traduira localement la vision globale que l’apôtre Yvan Castanou a reçu pour les églises Impact Centre Chrétien :
               </p>
-              <p>
-                Ce lieu traduira localement la vision que l’Apôtre Yvan Castanou a reçue pour ICC :
-                construire des hommes et des femmes qui inspirent et influencent positivement leur environnement pour la gloire de Dieu.
+              <p className="vision-statement">
+                Construire des hommes et des femmes qui inspirent et influencent positivement leur environnement pour la gloire de Dieu.
               </p>
             </div>
           </div>
 
-          <VisionCarousel />
-
-          <div className="availability-banner">
-            <strong>7 jours sur 7</strong>
-            <p>Un lieu disponible tout au long de la semaine pour accueillir la vie de l’Église, prendre soin des personnes, former, prier, servir et se rassembler.</p>
-          </div>
-        </div>
-
-        <div className="pillar-heading">
-          <p className="eyebrow">Deux piliers pour soutenir la vision</p>
-          <h2>Une même vision portée dans <span className="gold-text">l’unité et le sacrifice.</span></h2>
-          <p className="section-explainer">
-            Ce projet ne reposera pas sur l’effort de quelques-uns, mais sur l’engagement de toute la famille ICC Fontainebleau.
-            Ces deux piliers définissent la manière dont nous voulons avancer ensemble.
-          </p>
+          <p className="vision-pillars-intro">Deux piliers majeurs soutiendront ce projet d’implantation :</p>
         </div>
 
         <div className="royal-pillars" aria-label="Les deux piliers de Fontainebleau Royal">
@@ -85,16 +71,15 @@ export default function Project() {
               <div className="pillar-copy">
                 <strong>Un même projet porté par toute l’Église.</strong>
                 <p>Le peuple que Dieu s’est acquis sur le territoire se mobilise autour d’une même vision : comprendre l’enjeu, prier et contribuer selon ses possibilités.</p>
-                <p>Et au-delà d’ICC Fontainebleau, toute personne qui a à cœur de soutenir cette implantation peut également prendre part à cette histoire.</p>
+                <p>Et au-delà d’ICC Fontainebleau, toute personne qui a à cœur de soutenir cette implantation peut également prendre part dans cette histoire.</p>
               </div>
             </article>
-            <div className="mobile-temple-crown" aria-hidden="true"><Crown /></div>
             <article className="temple-column-card">
               <span className="pillar-number">02</span>
               <div className="gold-icon"><HandHeart /></div>
               <h3>Sacrifice</h3>
               <span className="pillar-divider" aria-hidden="true" />
-              <p>Accepter qu’un projet de cette ampleur demande un effort réel : dons, renoncements, temps, prière, mobilisation relationnelle et persévérance.</p>
+              <p>Accepter qu’un projet de cette ampleur demande un effort réel : dons, renoncements, temps, prière, mobilisation et persévérance.</p>
             </article>
           </div>
           <div className="temple-foundation" aria-hidden="true" />

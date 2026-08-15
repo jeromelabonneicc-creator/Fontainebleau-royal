@@ -8,14 +8,13 @@ export default function Story() {
         <div id="histoire" className="history-block history-block-first">
           <div className="story-grid">
             <div>
-              <p className="eyebrow">Une histoire de vision</p>
-              <h2>La vision a été<br/><span className="gold-text">annoncée.</span></h2>
+              <h2 className="story-prophecy-title">Ils ont déclaré et prophétisé <span className="gold-text">à ce sujet.</span></h2>
             </div>
             <blockquote className="scripture-panel story-scripture">
               <p>
                 « L’Éternel m’adressa la parole, et il dit : Écris la prophétie : Grave-la sur des tables,
-                afin qu’on la lise couramment. Car c’est une prophétie dont le temps est déjà fixé, elle marche
-                vers son terme, et elle ne mentira pas ; si elle tarde, attends-la, car elle s’accomplira,
+                afin qu’on la lise couramment. Car <strong>c’est une prophétie dont le temps est déjà fixé, elle marche
+                vers son terme</strong>, et elle ne mentira pas ; si elle tarde, attends-la, car elle s’accomplira,
                 elle s’accomplira certainement. »
               </p>
               <cite>Habacuc 2:2-3 — LSG</cite>
@@ -78,18 +77,6 @@ export default function Story() {
             <figcaption>Illustration inspirée d’Exode 11:2</figcaption>
           </figure>
 
-          <div className="challenge-biblical-support">
-            <blockquote>
-              <p>« Vous êtes […] un peuple acquis, afin que vous annonciez les vertus de celui qui vous a appelés. »</p>
-              <cite>1 Pierre 2:9</cite>
-            </blockquote>
-            <blockquote>
-              <p>« Que chacun demande à son voisin et chacune à sa voisine des vases d’argent et des vases d’or. »</p>
-              <cite>Exode 11:2</cite>
-            </blockquote>
-          </div>
-
-          <strong className="challenge-signature">Ce projet sera porté par le peuple que Dieu s’est choisi sur ce territoire.</strong>
           <ul>
             {projectNeeds.map((need) => <li key={need}><Check />{need}</li>)}
           </ul>

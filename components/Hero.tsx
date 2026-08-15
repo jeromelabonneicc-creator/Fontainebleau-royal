@@ -95,21 +95,20 @@ export default function Hero() {
           <h1 className="hero-title hero-title-campaign">
             <span className="hero-title-main">Fontainebleau <span className="gold-text">Royal</span></span>
             <span className="hero-title-lead">Ensemble, mobilisons-nous !</span>
-            <span className="hero-title-place">Préparons un lieu de vie à la gloire de Dieu au pays de Fontainebleau.</span>
           </h1>
 
           <p className="hero-copy">
-            Nous ne cherchons pas simplement à louer des murs. Nous préparons un lieu pour accueillir, équiper, servir et transmettre.
+            Préparons un lieu de vie à la gloire de Dieu au pays de Fontainebleau.
           </p>
 
           <blockquote className="hero-scripture">
-            <p>« J’ai donné une demeure à mon peuple […] et je l’ai planté pour qu’il y soit fixé et ne soit plus agité. »</p>
+            <p>« J’ai donné une demeure à mon peuple […] et je l’ai planté pour qu’il y soit <strong>FIXÉ</strong> et ne soit plus agité. »</p>
             <cite>2 Samuel 7:10</cite>
           </blockquote>
 
           <div className="hero-actions">
-            <a className="btn btn-gold" href="https://dons2.egliseicc.com/" target="_blank" rel="noreferrer">Contribuer au projet <ArrowRight size={18}/></a>
-            <a className="btn btn-outline" href="#projet">Découvrir le projet <ArrowRight size={18}/></a>
+            <a className="btn btn-outline" href="https://dons2.egliseicc.com/" target="_blank" rel="noreferrer">Contribuer au projet <ArrowRight size={18}/></a>
+            <a className="btn btn-gold" href="#projet">Découvrir le projet <ArrowRight size={18}/></a>
           </div>
 
         </div>
