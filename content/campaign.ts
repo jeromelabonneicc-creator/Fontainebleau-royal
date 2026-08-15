@@ -11,25 +11,29 @@ export const propheticVoices = [
     name: "Pasteur Jocelyne Fortuné",
     video: "/videos/prophecies/pasteur-jocelyne.mp4",
     poster: "/videos/prophecies/pasteur-jocelyne-poster.jpg",
-    objectPosition: "45% center"
+    objectPosition: "45% center",
+    quote: "Dieu a annoncé que ICC fontainebleau deviendra une méga church"
   },
   {
     name: "Pasteur Paul Mbonda",
     video: "/videos/prophecies/pasteur-paul.mp4",
     poster: "/videos/prophecies/pasteur-paul-poster.jpg",
-    objectPosition: "18% center"
+    objectPosition: "18% center",
+    quote: "Il y a une grande croissance qui arrive, fontainebleau c’est pour vous"
   },
   {
     name: "Pasteur Célia Manfoundou",
     video: "/videos/prophecies/pasteur-celia.mp4",
     poster: "/videos/prophecies/pasteur-celia-poster.jpg",
-    objectPosition: "52% center"
+    objectPosition: "52% center",
+    quote: "Vous êtes à l’étroit dans vos entrailles, élargissez-vous"
   },
   {
     name: "Pasteur Sita Koyamba",
     video: "/videos/prophecies/pasteur-sita.mp4",
     poster: "/videos/prophecies/pasteur-sita-poster.jpg",
-    objectPosition: "32% center"
+    objectPosition: "32% center",
+    quote: "La grossesse pour la salle a été envoyé Et elle va aller à son terme"
   }
 ];
 

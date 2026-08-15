@@ -27,29 +27,34 @@ export default function Story() {
           </p>
 
           <div className="prophecy-video-grid">
-            {propheticVoices.map(({ name, video, poster, objectPosition }) => (
-              <article className={`prophecy-video-card ${video ? "has-video" : ""}`} key={name}>
-                {video ? (
-                  <video
-                    controls
-                    playsInline
-                    preload="metadata"
-                    poster={poster}
-                    style={{ objectPosition }}
-                    aria-label={`Parole prophétique — ${name}`}
-                  >
-                    <source src={video} type="video/mp4" />
-                  </video>
-                ) : (
-                  <div className="prophecy-video-placeholder" aria-label={`Vidéo à venir — ${name}`}>
-                    <Play />
-                    <span>Vidéo à venir</span>
+            {propheticVoices.map(({ name, video, poster, objectPosition, quote }) => (
+              <article className="prophecy-video-item" key={name}>
+                <div className={`prophecy-video-card ${video ? "has-video" : ""}`}>
+                  {video ? (
+                    <video
+                      controls
+                      playsInline
+                      preload="metadata"
+                      poster={poster}
+                      style={{ objectPosition }}
+                      aria-label={`Parole prophétique — ${name}`}
+                    >
+                      <source src={video} type="video/mp4" />
+                    </video>
+                  ) : (
+                    <div className="prophecy-video-placeholder" aria-label={`Vidéo à venir — ${name}`}>
+                      <Play />
+                      <span>Vidéo à venir</span>
+                    </div>
+                  )}
+                  <div className="prophecy-video-caption">
+                    <span>Parole prophétique</span>
+                    <h3>{name}</h3>
                   </div>
-                )}
-                <div className="prophecy-video-caption">
-                  <span>Parole prophétique</span>
-                  <h3>{name}</h3>
                 </div>
+                <blockquote className="prophecy-video-quote">
+                  <p>« {quote} »</p>
+                </blockquote>
               </article>
             ))}
           </div>
