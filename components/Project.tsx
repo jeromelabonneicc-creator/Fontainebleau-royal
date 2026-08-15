@@ -1,6 +1,38 @@
 import { Crown, HandHeart, UsersRound } from "lucide-react";
+import { readdirSync } from "node:fs";
+import path from "node:path";
+import ProjectPhotoWall, { type ProjectWallPhoto } from "./ProjectPhotoWall";
+
+function getProjectWallPhotos(): ProjectWallPhoto[] {
+  const photosDirectory = path.join(process.cwd(), "public", "images", "projet");
+  const supportedImage = /\.(avif|jpe?g|png|webp)$/i;
+
+  let files: string[] = [];
+  try {
+    files = readdirSync(photosDirectory)
+      .filter((file) => supportedImage.test(file))
+      .sort((a, b) => a.localeCompare(b, "fr", { numeric: true }));
+  } catch {
+    files = [];
+  }
+
+  return [
+    {
+      src: "/images/BATIMENT.png",
+      alt: "Projection du futur bâtiment d’ICC Fontainebleau",
+      caption: "S’implanter durablement"
+    },
+    ...files.map((file, index) => ({
+      src: `/images/projet/${file}`,
+      alt: `Moment de joie et de communion à ICC Fontainebleau ${index + 1}`,
+      caption: file === "joie-eglise.jpg" ? "Vivre la joie ensemble" : undefined
+    }))
+  ];
+}
 
 export default function Project() {
+  const projectWallPhotos = getProjectWallPhotos();
+
   return (
     <section id="projet" className="section project" data-reveal-section>
       <div className="container">
@@ -20,16 +52,8 @@ export default function Project() {
             </p>
           </div>
 
-          <div className="project-overview-visual" aria-label="Illustrations des activités d’ICC Fontainebleau">
-            <figure className="project-visual-main">
-              <img src="/images/BATIMENT.png" alt="Projection du futur bâtiment d’ICC Fontainebleau" />
-              <figcaption>S’implanter durablement</figcaption>
-            </figure>
-            <figure className="project-visual-inset">
-              <img src="/images/projet/joie-eglise.jpg" alt="Une assemblée chrétienne multiculturelle réunie dans la joie" />
-              <figcaption>Vivre la joie ensemble</figcaption>
-            </figure>
-            <p className="projection-disclaimer">Visuels d’illustration — images non contractuelles.</p>
+          <div className="project-overview-visual">
+            <ProjectPhotoWall photos={projectWallPhotos} />
           </div>
         </div>
 

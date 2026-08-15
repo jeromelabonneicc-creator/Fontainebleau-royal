@@ -287,15 +287,35 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
 .project-overview-copy>p:not(.eyebrow){max-width:650px;color:#c4ccda;font-size:17px;line-height:1.75}
 .project-overview-copy .project-lead{color:#eef1f5!important;font-size:20px!important}
 .project-overview-copy strong{color:var(--gold-2)}
-.project-overview-visual{position:relative;min-height:540px}
-.project-overview-visual figure{margin:0;overflow:hidden;border:1px solid rgba(243,181,26,.52);background:#05152c;box-shadow:0 28px 65px rgba(0,0,0,.34)}
-.project-overview-visual img{transition:transform .8s cubic-bezier(.22,1,.36,1)}
-.project-visual-main img{object-fit:cover;background:#031227}
-.project-overview-visual:hover img{transform:scale(1.025)}
-.project-visual-main{position:absolute;top:38px;right:0;bottom:auto;left:52px;aspect-ratio:16/9;border-radius:26px}
-.project-visual-inset{position:absolute;left:0;bottom:0;width:62%;height:250px;border-radius:21px}
-.project-overview-visual figcaption{position:absolute;left:18px;bottom:18px;padding:9px 13px;border:1px solid var(--line);border-radius:999px;background:rgba(2,13,29,.76);backdrop-filter:blur(12px);font-size:12px;font-weight:700}
-.projection-disclaimer{position:absolute;right:0;bottom:-24px;margin:0;color:#8390a2;font-size:11px;letter-spacing:.05em}
+.project-overview-visual{position:relative;min-height:560px;isolation:isolate}
+.photo-wall{position:relative;height:560px;overflow:hidden;border-block:1px solid rgba(243,181,26,.2);background:radial-gradient(circle at 50% 50%,rgba(20,58,100,.38),transparent 64%)}
+.photo-wall::before{content:"";position:absolute;z-index:4;inset:0;pointer-events:none;background:linear-gradient(90deg,#03142b 0,rgba(3,20,43,.72) 4%,transparent 15%,transparent 85%,rgba(3,20,43,.72) 96%,#03142b 100%)}
+.photo-wall::after{content:"";position:absolute;z-index:3;right:8%;bottom:5px;left:8%;height:1px;background:linear-gradient(90deg,transparent,rgba(243,181,26,.62),transparent);box-shadow:0 0 18px rgba(243,181,26,.32)}
+.photo-wall-motion{position:absolute;inset:-14px -22px;display:flex;flex-direction:column;justify-content:center;gap:2px;transform:rotate(-.7deg) scale(1.035)}
+.photo-wall-track{height:181px;display:flex;align-items:center;overflow:visible}
+.photo-wall-track:nth-child(2){margin-left:-78px}
+.photo-wall-track:nth-child(3){margin-left:34px}
+.photo-wall-rail{display:flex;width:max-content;will-change:transform}
+.photo-wall-set{display:flex;flex:none;align-items:center;gap:14px;padding-right:14px}
+.photo-wall-card{position:relative;flex:none;margin:0;padding:0;overflow:hidden;border:1px solid rgba(243,181,26,.55);border-radius:19px;background:#06162d;box-shadow:0 20px 45px rgba(0,0,0,.35);cursor:zoom-in;transition:border-color .35s ease,filter .35s ease,box-shadow .35s ease}
+.photo-wall-card::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 58%,rgba(1,8,19,.48))}
+.photo-wall-card img{object-fit:cover;transition:transform .8s cubic-bezier(.22,1,.36,1)}
+.photo-wall-card:hover{z-index:2;border-color:rgba(255,212,94,.9);filter:brightness(1.08);box-shadow:0 24px 55px rgba(0,0,0,.44),0 0 24px rgba(243,181,26,.12)}
+.photo-wall-card:hover img{transform:scale(1.045)}
+.photo-wall-card--0{width:280px;height:164px;transform:translateY(10px) rotate(-.7deg)}
+.photo-wall-card--1{width:156px;height:196px;transform:translateY(-9px) rotate(1.1deg)}
+.photo-wall-card--2{width:225px;height:142px;transform:translateY(17px) rotate(.6deg)}
+.photo-wall-card--3{width:188px;height:171px;transform:translateY(-12px) rotate(-1.2deg)}
+.photo-wall-card--4{width:254px;height:158px;transform:translateY(7px) rotate(.8deg)}
+.photo-wall-card--5{width:147px;height:190px;transform:translateY(-4px) rotate(-.5deg)}
+.photo-wall-caption{position:absolute;z-index:2;left:12px;bottom:11px;max-width:calc(100% - 24px);padding:7px 10px;border:1px solid rgba(255,255,255,.15);border-radius:999px;background:rgba(2,13,29,.75);color:#fff;font-size:10px;font-weight:750;line-height:1.2;backdrop-filter:blur(10px)}
+.photo-wall .projection-disclaimer{position:absolute;z-index:5;right:14px;bottom:14px;margin:0;color:#94a0b2;font-size:10px;letter-spacing:.05em}
+.photo-wall-static{display:none}
+.photo-wall-lightbox{position:fixed;z-index:400;inset:0;display:grid;place-items:center;padding:70px 24px 40px;background:rgba(1,7,17,.93);backdrop-filter:blur(15px)}
+.photo-wall-lightbox-image{position:relative;width:min(92vw,1180px);height:min(78vh,820px)}
+.photo-wall-lightbox-image img{object-fit:contain}
+.photo-wall-lightbox-close{position:absolute;z-index:2;top:max(18px,env(safe-area-inset-top));right:22px;width:46px;height:46px;display:grid;place-items:center;border:1px solid rgba(243,181,26,.55);border-radius:50%;background:#07182f;color:#fff;cursor:pointer}
+.photo-wall-lightbox>p{position:absolute;bottom:20px;margin:0;color:var(--gold-2);font-size:13px;font-weight:750;letter-spacing:.06em}
 .project-manifesto{display:grid;grid-template-columns:.42fr 1fr;gap:45px;margin-top:86px;padding:34px 0;border-top:1px solid rgba(243,181,26,.45);border-bottom:1px solid var(--line)}
 .project-manifesto span{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
 .project-manifesto strong{font-size:clamp(22px,2.2vw,34px);line-height:1.35}
@@ -441,6 +461,8 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
   .hero-title-royal{font-size:clamp(60px,9vw,92px);max-width:850px}
   .project-overview,.vision-heading,.solidarity-heading,.prayer-block,.spiritual-card,.projection-heading{grid-template-columns:1fr;gap:28px}
   .project-overview-visual{min-height:610px}
+  .photo-wall{height:600px}
+  .photo-wall-track{height:194px}
   .solidarity-grid{grid-template-columns:repeat(3,1fr)}
   .prophecy-video-grid{grid-template-columns:repeat(2,1fr)}
   .prayer-points{grid-template-columns:repeat(2,1fr)}
@@ -481,9 +503,22 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
   .scripture-panel::after{right:10px;font-size:58px}
   .project-overview{gap:42px}
   .project-overview-copy .project-lead{font-size:18px!important}
-  .project-overview-visual{min-height:420px}
-  .project-visual-main{top:18px;right:0;bottom:auto;left:28px;aspect-ratio:16/9;border-radius:20px}
-  .project-visual-inset{width:72%;height:190px;border-radius:17px}
+  .project-overview-visual{min-height:440px}
+  .photo-wall{width:calc(100% + 28px);height:440px;margin-left:-14px}
+  .photo-wall-motion{inset:-10px -16px;gap:0;transform:rotate(-.6deg) scale(1.025)}
+  .photo-wall-track{height:146px}
+  .photo-wall-track:nth-child(2){margin-left:-48px}
+  .photo-wall-track:nth-child(3){margin-left:22px}
+  .photo-wall-set{gap:10px;padding-right:10px}
+  .photo-wall-card{border-radius:14px}
+  .photo-wall-card--0{width:205px;height:122px}
+  .photo-wall-card--1{width:112px;height:142px}
+  .photo-wall-card--2{width:166px;height:105px}
+  .photo-wall-card--3{width:137px;height:126px}
+  .photo-wall-card--4{width:186px;height:116px}
+  .photo-wall-card--5{width:108px;height:139px}
+  .photo-wall-caption{left:8px;bottom:8px;max-width:calc(100% - 16px);padding:6px 8px;font-size:8px}
+  .photo-wall .projection-disclaimer{right:14px;bottom:10px;max-width:70%;font-size:9px;text-align:right}
   .project-manifesto{grid-template-columns:1fr;gap:16px;margin-top:60px}
   .vision-section{margin-top:82px}
   .vision-heading{gap:18px}
@@ -547,4 +582,15 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
 
 @media(prefers-reduced-motion:reduce){
   .hero-scripture{opacity:1;transform:none}
+  .project-overview-visual{min-height:0}
+  .photo-wall{height:auto;overflow:visible;border:0;background:none}
+  .photo-wall::before,.photo-wall::after,.photo-wall-motion{display:none}
+  .photo-wall-static{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+  .photo-wall-static .photo-wall-card{width:100%;height:180px;transform:none}
+  .photo-wall .projection-disclaimer{position:static;margin-top:12px;text-align:right}
+}
+
+@media(max-width:720px) and (prefers-reduced-motion:reduce){
+  .photo-wall-static{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .photo-wall-static .photo-wall-card{height:135px}
 }
