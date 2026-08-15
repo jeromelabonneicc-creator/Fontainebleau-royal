@@ -8,7 +8,7 @@ export default function Donation() {
           <p className="eyebrow">Contribuer</p>
           <h2>Je <span className="gold-text">participe.</span></h2>
           <p className="donation-copy">
-            Les contributions permettent de couvrir la location, les travaux d’aménagement,
+            Les contributions permettent de couvrir les travaux d’aménagement,
             les finitions, l’équipement et l’installation du futur lieu.
           </p>
           <p className="donation-copy">Chacun reste libre du montant et du rythme de sa contribution.</p>

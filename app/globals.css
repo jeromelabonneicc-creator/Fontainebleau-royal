@@ -420,10 +420,13 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
 .challenge-illustration::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 58%,rgba(2,13,29,.82))}
 .challenge-illustration img{width:100%;height:100%;object-fit:cover}
 .challenge-illustration figcaption{position:absolute;z-index:2;left:20px;bottom:18px;color:var(--gold-2);font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.challenge-scripture{margin:22px 0 0;padding:22px 24px;border-left:2px solid var(--gold);background:rgba(243,181,26,.055)}
+.challenge-scripture p{margin:0;color:#e3e7ed;font-size:17px;line-height:1.6}
+.challenge-scripture cite{display:block;margin-top:12px;color:var(--gold);font-size:10px;font-style:normal;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
 .major-challenge-card ul{grid-template-columns:repeat(2,1fr);gap:0 34px}
 .spiritual-verse cite{display:block;margin-top:14px;color:var(--gold);font-size:10px;font-style:normal;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
 .spiritual-card{display:grid;grid-template-columns:1fr .75fr;gap:52px;align-items:stretch;margin-top:28px;background:linear-gradient(145deg,#0b2548,#06172f)}
-.spiritual-title-emphasis{display:inline-block;margin-top:8px;padding:7px 10px;border-radius:8px;background:linear-gradient(135deg,#ffd45e,#d99b00);color:#07172c;font-size:.44em;font-weight:900;line-height:1;text-transform:uppercase;vertical-align:middle;box-shadow:0 10px 26px rgba(243,181,26,.16)}
+.spiritual-title-emphasis{display:block;margin-top:8px;color:var(--gold-2);font-size:.78em;font-weight:800;line-height:1.08}
 .spiritual-card-copy>p:not(.eyebrow){color:#bdc7d5;font-size:17px;line-height:1.65}
 .spiritual-card-copy>p:not(.eyebrow)+p{margin-top:18px}
 .spiritual-card strong{display:block;margin-top:34px;padding-top:20px;border-top:1px solid rgba(243,181,26,.32);color:var(--gold-2);font-size:18px;line-height:1.5}
@@ -438,13 +441,24 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
 .prayer-copy{margin:26px 0 0;color:#c9d2de;font-size:17px;line-height:1.7}
 .prayer-heading blockquote p{margin:0;font-size:24px;line-height:1.45;font-weight:700}
 .prayer-heading cite{display:block;margin-top:15px;color:var(--gold);font-size:12px;font-style:normal;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
-.prayer-points-intro{margin:0 0 8px;color:var(--gold-2);font-size:14px;font-weight:700;line-height:1.5}
-.prayer-points{display:grid;grid-template-columns:repeat(2,1fr);gap:0 26px}
-.prayer-points>div{display:flex;gap:12px;align-items:flex-start;padding:17px 0;border-bottom:1px solid var(--line)}
-.prayer-points>div>span{color:var(--gold)}
-.prayer-points p{margin:0;color:#d4dbe5;font-size:15px;line-height:1.5}
-.prayer-points .prayer-point-verse{display:block;margin-top:6px;color:#9fabbc;font-size:12px;font-style:italic;line-height:1.55}
-.prayer-points cite{display:block;margin-top:5px;color:var(--gold);font-size:10px;font-style:normal;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.prayer-points-intro{margin:0 0 12px;color:var(--gold-2);font-size:15px;font-weight:800;line-height:1.5}
+.prayer-accordion{border-bottom:1px solid var(--line)}
+.prayer-accordion-item{border-top:1px solid var(--line)}
+.prayer-accordion-trigger{width:100%;display:grid;grid-template-columns:18px minmax(0,1fr) 30px;gap:12px;align-items:start;padding:22px 0;border:0;color:#e4e8ee;background:none;text-align:left;cursor:pointer;font:inherit}
+.prayer-accordion-trigger>span:nth-child(2){font-size:16px;font-weight:700;line-height:1.55}
+.prayer-accordion-marker{padding-top:3px;color:var(--gold);font-size:12px}
+.prayer-accordion-toggle{width:28px;height:28px;display:grid;place-items:center;border:1px solid rgba(243,181,26,.38);border-radius:50%;color:var(--gold);font-size:20px;line-height:1;transition:background .25s ease,color .25s ease}
+.prayer-accordion-item.is-open .prayer-accordion-toggle{color:#07172c;background:var(--gold)}
+.prayer-accordion-content{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .48s cubic-bezier(.22,1,.36,1),opacity .3s ease}
+.prayer-accordion-item.is-open .prayer-accordion-content{grid-template-rows:1fr;opacity:1}
+.prayer-accordion-inner{min-height:0;overflow:hidden}
+.prayer-accordion-body{padding:0 0 26px 30px}
+.prayer-topic-section+.prayer-topic-section{margin-top:24px;padding-top:24px;border-top:1px solid rgba(255,255,255,.08)}
+.prayer-topic-copy{margin:0 0 15px;color:#cbd3de;font-size:14px;line-height:1.65}
+.prayer-topic-verses{display:grid;gap:10px}
+.prayer-topic-verses blockquote{margin:0;padding:15px 17px;border-left:2px solid var(--gold);background:rgba(243,181,26,.045)}
+.prayer-topic-verses p{margin:0;color:#aeb9c8;font-size:13px;font-style:italic;line-height:1.6}
+.prayer-topic-verses cite{display:block;margin-top:8px;color:var(--gold);font-size:9px;font-style:normal;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
 .history-block{margin-top:124px;padding-top:112px;border-top:1px solid rgba(243,181,26,.28);scroll-margin-top:80px}
 .history-block-first{margin-top:0;padding-top:0;border-top:0}
 .campaign-stage-heading{margin-top:124px}
@@ -465,7 +479,6 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
   .photo-wall-track{height:194px}
   .solidarity-grid{grid-template-columns:repeat(3,1fr)}
   .prophecy-video-grid{grid-template-columns:repeat(2,1fr)}
-  .prayer-points{grid-template-columns:repeat(2,1fr)}
 }
 
 @media(max-width:820px){
@@ -565,8 +578,12 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
   .prayer-block{margin-top:18px;padding:32px 24px}
   .prayer-title{font-size:46px}
   .prayer-copy{font-size:16px;line-height:1.68}
-  .prayer-points{grid-template-columns:1fr}
   .prayer-heading blockquote p{font-size:21px}
+  .prayer-topics{margin-top:6px}
+  .prayer-accordion-trigger{grid-template-columns:16px minmax(0,1fr) 28px;gap:9px;padding:19px 0}
+  .prayer-accordion-trigger>span:nth-child(2){font-size:15px;line-height:1.5}
+  .prayer-accordion-body{padding:0 0 23px 25px}
+  .prayer-topic-copy{font-size:14px}
   .history-block{margin-top:82px;padding-top:78px}
   .history-block-first{margin-top:0;padding-top:0}
   .projection-showcase{margin-top:78px;padding-top:72px}
@@ -588,6 +605,7 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
   .photo-wall-static{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
   .photo-wall-static .photo-wall-card{width:100%;height:180px;transform:none}
   .photo-wall .projection-disclaimer{position:static;margin-top:12px;text-align:right}
+  .prayer-accordion-content,.prayer-accordion-toggle{transition:none}
 }
 
 @media(max-width:720px) and (prefers-reduced-motion:reduce){

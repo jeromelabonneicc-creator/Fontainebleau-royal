@@ -1,5 +1,6 @@
 import { Check, Church, Play, ShieldCheck } from "lucide-react";
-import { prayerPoints, projectNeeds, propheticVoices } from "@/content/campaign";
+import { projectNeeds, propheticVoices } from "@/content/campaign";
+import PrayerAccordion from "./PrayerAccordion";
 
 export default function Story() {
   return (
@@ -77,6 +78,11 @@ export default function Story() {
             <figcaption>Illustration inspirée d’Exode 11:2</figcaption>
           </figure>
 
+          <blockquote className="challenge-scripture">
+            <p>« Que chacun demande à son voisin et chacune à sa voisine des vases d’argent et des vases d’or. »</p>
+            <cite>Exode 11:2</cite>
+          </blockquote>
+
           <ul>
             {projectNeeds.map((need) => <li key={need}><Check />{need}</li>)}
           </ul>
@@ -86,7 +92,7 @@ export default function Story() {
           <div className="spiritual-card-copy">
             <div className="gold-icon"><Church /></div>
             <p className="eyebrow">La portée spirituelle du projet</p>
-            <h3>Un lieu consacré à Dieu <span className="spiritual-title-emphasis">: un autel royal&nbsp;!</span></h3>
+            <h3>Un lieu consacré à Dieu : <span className="spiritual-title-emphasis">un autel royal&nbsp;!</span></h3>
             <p>
               Au-delà d’un lieu de rassemblement, d’adoration, de formation, de refuge, de soutien… nous voulons établir
               à Fontainebleau un espace mis à part pour Dieu, où Son nom sera invoqué, Sa présence recherchée,
@@ -113,7 +119,10 @@ export default function Story() {
             <p className="eyebrow">Bâtir dans la prière</p>
             <h2 className="prayer-title">Prions <span className="gold-text">ensemble.</span></h2>
             <p className="prayer-copy">
-              À l’image de Néhémie, nous ne voulons pas seulement bâtir avec nos forces : nous voulons prier, discerner et agir.
+              À l’image de Néhémie, nous ne voulons pas bâtir sur la base de nos propres forces. Nous voulons d’abord activer
+              l’arme de la prière : nous voulons prier, discerner et agir.
+            </p>
+            <p className="prayer-copy">
               La prière accompagne chaque étape du projet, depuis la recherche du lieu jusqu’à son aménagement et son ouverture.
             </p>
             <blockquote>
@@ -121,20 +130,9 @@ export default function Story() {
               <cite>Néhémie 4:9</cite>
             </blockquote>
           </div>
-          <div>
-            <p className="prayer-points-intro">Nous nous accordons notamment dans la prière pour :</p>
-            <div className="prayer-points">
-              {prayerPoints.map(({ point, quote, verse }) => (
-                <div key={point}>
-                  <span>✦</span>
-                  <p>
-                    {point}
-                    <span className="prayer-point-verse">« {quote} »</span>
-                    <cite>{verse}</cite>
-                  </p>
-                </div>
-              ))}
-            </div>
+          <div className="prayer-topics">
+            <p className="prayer-points-intro">Accordons-nous dans la prière sur ces sujets :</p>
+            <PrayerAccordion />
           </div>
         </div>
 
