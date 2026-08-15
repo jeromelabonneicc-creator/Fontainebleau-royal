@@ -19,8 +19,8 @@ export default function Home() {
       <VideoSection />
       <Project />
       <Story />
-      <Mission />
       <Donation />
+      <Mission />
       <FAQ />
       <FinalCTA />
       <Footer />
