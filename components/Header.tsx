@@ -8,6 +8,7 @@ const links = [
   ["La vision", "#vision"],
   ["Histoire", "#histoire"],
   ["Contribuer", "#contribuer"],
+  ["Qui sommes-nous", "#qui-sommes-nous"],
 ];
 
 export default function Header() {

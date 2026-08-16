@@ -88,3 +88,10 @@ export const historyTopics = [
   "Il est temps d’élargir l’espace de notre tente",
   "Les déclarations prophétiques reçues autour du futur lieu"
 ];
+
+export const iccStats = [
+  { value: "24", label: "ans d’existence" },
+  { value: "+185", label: "églises" },
+  { value: "100+", label: "pays" },
+  { value: "63K+", label: "personnes touchées chaque semaine" }
+];
