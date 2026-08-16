@@ -6,6 +6,7 @@ import Project from "@/components/Project";
 import Mission from "@/components/Mission";
 import Donation from "@/components/Donation";
 import FAQ from "@/components/FAQ";
+import AboutICC from "@/components/AboutICC";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 import CinematicMotion from "@/components/CinematicMotion";
@@ -19,9 +20,10 @@ export default function Home() {
       <VideoSection />
       <Project />
       <Story />
-      <Donation />
       <Mission />
+      <Donation />
       <FAQ />
+      <AboutICC />
       <FinalCTA />
       <Footer />
     </main>
