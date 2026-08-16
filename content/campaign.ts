@@ -12,14 +12,14 @@ export const propheticVoices = [
     video: "/videos/prophecies/pasteur-jocelyne.mp4",
     poster: "/videos/prophecies/pasteur-jocelyne-poster.jpg",
     objectPosition: "45% center",
-    quote: "Dieu a annoncé que ICC fontainebleau deviendra une méga church"
+    quote: "Dieu a annoncé que ICC Fontainebleau deviendra une méga church"
   },
   {
     name: "Pasteur Paul Mbonda",
     video: "/videos/prophecies/pasteur-paul.mp4",
     poster: "/videos/prophecies/pasteur-paul-poster.jpg",
     objectPosition: "18% center",
-    quote: "Il y a une grande croissance qui arrive, fontainebleau c’est pour vous"
+    quote: "Il y a une grande croissance qui arrive, Fontainebleau c’est pour vous"
   },
   {
     name: "Pasteur Célia Manfoundou",
@@ -33,7 +33,7 @@ export const propheticVoices = [
     video: "/videos/prophecies/pasteur-sita.mp4",
     poster: "/videos/prophecies/pasteur-sita-poster.jpg",
     objectPosition: "32% center",
-    quote: "La grossesse pour la salle a été envoyé et elle va aller à son terme"
+    quote: "La grossesse pour la salle a été envoyée et elle va aller à son terme"
   }
 ];
 
