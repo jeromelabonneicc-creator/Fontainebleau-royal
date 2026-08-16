@@ -621,7 +621,7 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
 
 .about-icc{background:linear-gradient(180deg,#020d1d,#06172f);scroll-margin-top:90px}
 .about-grid{display:grid;grid-template-columns:1fr .8fr;gap:70px;align-items:center}
-.about-copy h2{font-size:clamp(38px,4.6vw,64px)}
+.about-title{margin:0 0 26px;font-size:13px;line-height:1.4;letter-spacing:.22em}
 .about-lead{max-width:640px;margin:0;color:#c4ccda;font-size:18px;line-height:1.72}
 .about-lead strong{color:var(--gold-2);font-weight:800}
 .about-pastors{max-width:600px;margin:26px 0 0;padding:18px 0 18px 22px;border-left:2px solid rgba(243,181,26,.72);color:#d5dce6;font-size:16px;line-height:1.7}
