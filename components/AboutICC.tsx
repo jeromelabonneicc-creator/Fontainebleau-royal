@@ -20,7 +20,7 @@ export default function AboutICC() {
           </div>
 
           <figure className="about-portrait">
-            <img src="/images/pasteurs-castanou.png" alt="Yvan et Modestine Castanou, pasteurs des églises ICC" />
+            <img src="/images/pasteurs-castanou.webp" alt="Yvan et Modestine Castanou, pasteurs des églises ICC" />
           </figure>
         </div>
 
