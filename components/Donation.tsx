@@ -38,9 +38,9 @@ export default function Donation() {
             <div>
               <strong>Donner librement et en conscience</strong>
               <p>
-                « Ne vous endettez jamais pour donner à Dieu. Donnez selon votre niveau de foi et votre prospérité,
+                Ne vous endettez jamais pour donner à Dieu. Donnez selon votre niveau de foi et votre prospérité,
                 <br />{" "}
-                Lorsque vous donnez, faites-le en toute conscience et liberté, avec joie, sans contrainte, ni regret. »
+                Lorsque vous donnez, faites-le en toute conscience et liberté, avec joie, sans contrainte, ni regret.
               </p>
               <cite>2 Corinthiens 9:7</cite>
             </div>

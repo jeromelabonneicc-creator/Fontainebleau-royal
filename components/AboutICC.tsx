@@ -6,12 +6,12 @@ export default function AboutICC() {
       <div className="container">
         <div className="about-grid">
           <div className="about-copy">
-            <p className="eyebrow">Qui sommes-nous</p>
-            <h2>L’église derrière<br/><span className="gold-text">le projet.</span></h2>
+            <h2 className="eyebrow about-title">Qui sommes-nous&#8239;?</h2>
             <p className="about-lead">
               Impact Centre Chrétien (ICC) est une <strong>église protestante</strong> membre de la <strong>CEAF</strong> et de la
-              {" "}<strong>Fédération Protestante de France</strong>, qui rassemble plus de <strong>63 000 personnes</strong> chaque
-              dimanche au sein de plus de <strong>185 églises locales</strong> dans le monde entier.
+              {" "}<strong>Fédération Protestante de France</strong> qui rassemble plus de <strong>63 000 personnes</strong> chaque
+              dimanche au sein de plus de <strong>185 églises locales</strong> dans le monde entier, et des dizaines de milliers de
+              personnes qui suivent chaque semaine la retransmission de ses cultes sur Internet.
             </p>
             <p className="about-pastors">
               <strong>Yvan Castanou</strong> est le pasteur principal des églises ICC. Il œuvre dans le ministère aux côtés de son
