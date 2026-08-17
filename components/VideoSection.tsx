@@ -11,10 +11,10 @@ export default function VideoSection() {
             controls
             playsInline
             preload="metadata"
-            poster="/images/appel-aux-dons-poster.webp"
+            poster="/videos/presentation-fontainebleau-royal-poster.webp"
             aria-label="Présentation de Fontainebleau Royal"
           >
-            <source src="/images/video-presentation-fontainebleau-royale.mp4" type="video/mp4" />
+            <source src="/videos/presentation-fontainebleau-royal.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
