@@ -425,6 +425,8 @@ radial-gradient(circle at 50% 50%,rgba(243,181,26,.08),transparent 35%),
 .challenge-illustration img{width:100%;height:100%;object-fit:cover}
 .challenge-illustration figcaption{position:absolute;z-index:2;left:20px;bottom:18px;color:var(--gold-2);font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
 .challenge-scripture{margin:22px 0 0;padding:22px 24px;border-left:2px solid var(--gold);background:rgba(243,181,26,.055)}
+.challenge-signature{display:block;max-width:920px;margin-top:34px;padding-top:24px;border-top:1px solid rgba(243,181,26,.3);color:var(--gold-2);font-size:18px;line-height:1.5}
+.challenge-scripture-closing{margin-top:34px}
 .challenge-scripture p{margin:0;color:#e3e7ed;font-size:17px;line-height:1.6}
 .challenge-scripture cite{display:block;margin-top:12px;color:var(--gold);font-size:10px;font-style:normal;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
 .major-challenge-card ul{grid-template-columns:repeat(2,1fr);gap:0 34px}

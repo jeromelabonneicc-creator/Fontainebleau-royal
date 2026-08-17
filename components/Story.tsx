@@ -88,9 +88,18 @@ export default function Story() {
             <cite>Exode 11:2</cite>
           </blockquote>
 
+          <strong className="challenge-signature">
+            Ce projet sera porté par le peuple que Dieu s’est choisi sur ce territoire pour couvrir&nbsp;:
+          </strong>
+
           <ul>
             {projectNeeds.map((need) => <li key={need}><Check />{need}</li>)}
           </ul>
+
+          <blockquote className="challenge-scripture challenge-scripture-closing">
+            <p>« Vous êtes […] un peuple acquis, afin que vous annonciez les vertus de celui qui vous a appelés. »</p>
+            <cite>1 Pierre 2:9</cite>
+          </blockquote>
         </article>
 
         <article className="challenge-card spiritual-card">
