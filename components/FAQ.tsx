@@ -46,7 +46,7 @@ export default function FAQ() {
       <div className="container faq-grid">
         <div>
           <p className="eyebrow">Comprendre Fontainebleau Royal</p>
-          <h2>S’informer avant de<br/><span className="gold-text">contribuer.</span></h2>
+          <h2>S’informer avant de <span className="gold-text">contribuer.</span></h2>
           <p className="faq-intro">Les réponses essentielles sur le lieu, les contributions et les actions qui y seront accueillies.</p>
         </div>
         <div className="faq-list">
