@@ -123,7 +123,7 @@ export default function Story() {
             </p>
           </div>
           <figure className="spiritual-card-visual">
-            <img src="/images/WORSHIP.png" alt="Projection d’une salle dédiée à l’adoration et aux rassemblements" />
+            <img src="/images/WORSHIP.webp" alt="Projection d’une salle dédiée à l’adoration et aux rassemblements" />
             <figcaption>Visuel d’illustration</figcaption>
           </figure>
         </article>

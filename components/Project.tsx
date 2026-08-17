@@ -18,7 +18,7 @@ function getProjectWallPhotos(): ProjectWallPhoto[] {
 
   return [
     {
-      src: "/images/BATIMENT.png",
+      src: "/images/BATIMENT.webp",
       alt: "Projection du futur bâtiment d’ICC Fontainebleau",
       caption: "S’implanter durablement"
     },
@@ -70,7 +70,7 @@ export default function Project() {
           </div>
           <div className="projection-grid">
             <figure>
-              <img src="/images/SALLE.png" alt="Projection de la salle principale vide" />
+              <img src="/images/SALLE.webp" alt="Projection de la salle principale vide" />
               <figcaption>La salle principale</figcaption>
             </figure>
             <figure>
@@ -78,7 +78,7 @@ export default function Project() {
               <figcaption>La salle annexe</figcaption>
             </figure>
             <figure>
-              <img src="/images/projections/salle-reunion.png" alt="Projection d’une salle de réunion" />
+              <img src="/images/projections/salle-reunion.webp" alt="Projection d’une salle de réunion" />
               <figcaption>La salle de réunion</figcaption>
             </figure>
             <figure>
@@ -94,7 +94,7 @@ export default function Project() {
               <figcaption>La salle des enfants</figcaption>
             </figure>
             <figure>
-              <img src="/images/projections/Point repos cuisine pour les STAR.png" alt="Projection d’un point repos et cuisine pour les STAR" />
+              <img src="/images/projections/Point repos cuisine pour les STAR.webp" alt="Projection d’un point repos et cuisine pour les STAR" />
               <figcaption>Point repos cuisine pour les STAR</figcaption>
             </figure>
           </div>
