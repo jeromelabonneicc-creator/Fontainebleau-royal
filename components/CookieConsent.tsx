@@ -9,6 +9,12 @@ export const EVENEMENT_OUVERTURE = "ftb:ouvrir-consentement";
 
 type Choix = "accepte" | "refuse";
 
+// La mesure d'audience ne tourne qu'en production réelle : jamais en local,
+// jamais sur les previews Vercel (pourtant bâties avec NODE_ENV=production).
+const mesureAutorisee =
+  process.env.NODE_ENV === "production" &&
+  (process.env.NEXT_PUBLIC_VERCEL_ENV ?? "production") === "production";
+
 function lireChoix(): Choix | null {
   try {
     const valeur = window.localStorage.getItem(CLE_STOCKAGE);
@@ -68,7 +74,7 @@ export default function CookieConsent() {
 
   return (
     <>
-      {choix === "accepte" && (
+      {mesureAutorisee && choix === "accepte" && (
         <Script id="microsoft-clarity" strategy="afterInteractive">
           {`(function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
